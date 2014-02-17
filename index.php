@@ -1,3 +1,17 @@
+<?php session_start(); 
+header('P3P: CP="NOI ADM DEV COM NAV OUR STP"');
+if(isset($_REQUEST['currentPage'])) {
+    $_SESSION['currentPage'] = $_REQUEST['currentPage'];
+}
+
+if(!isset($_SESSION['currentPage'])) {
+    $_SESSION['currentPage'] = 'home';
+    $bodyClass = "page-" . $_SESSION['currentPage'];
+} else {
+    $bodyClass = "page-" . $_SESSION['currentPage'];
+}
+
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -8,8 +22,17 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Your Page Title Here :)</title>
-	<meta name="description" content="">
+        <meta name="description" content="description text" />
+        <meta property="og:image" content="http://f-bilandia.de/heyne/kitzntusch/images/share.jpg"/>
+        <meta property="og:image:secure_url" content="https://f-bilandia.de/heyne/kitzntusch/images/share.jpg">
+        <meta property="og:image:type" content="image/jpg">
+        <meta property="og:image:width" content="200">
+        <meta property="og:image:height" content="200">
+        <meta property="og:title" content="title text"/>
+        <meta property="og:description" content="description text" />
+        <meta property="og:url" content="http://f-bilandia.de/heyne/kitzntusch/index.php"/>
 	<meta name="author" content="">
 
 	<!-- Mobile Specific Metas
@@ -33,8 +56,13 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+	<!-- Scripts 
+	================================================== -->
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/quiz.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body>
+<body class="<?php echo $bodyClass ?>">
 
 
 
@@ -48,13 +76,14 @@
 			<h2 class="header">auf welcher Seite stehst du?</h2>
 		</div>
 		<div class="contentWrapper eleven columns offset-by-four">
-			<div class="content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis diam id neque tincidunt adipiscing. Maecenas vel ornare sem. Nullam at ullamcorper ante, nec laoreet orci. In hac habitasse platea dictumst. Aenean elementum dolor et fermentum interdum. Pellentesque mollis ut velit in ultrices. Duis accumsan odio sit amet ligula viverra sodales. Praesent nec libero tortor. Suspendisse sit amet tincidunt risus, vitae consectetur dolor. In hac habitasse platea dictumst. Cras a vestibulum risus. Integer sit amet sollicitudin magna. Suspendisse et purus sodales, scelerisque metus id, accumsan tellus. Mauris ultricies dolor libero, eu malesuada dolor ultricies a. Curabitur sit amet dui orci.</p>
-				<p class="highlight">Mach mit und stell dich deiner dunkeln Seite!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis diam id neque tincidunt adipiscing. Maecenas vel ornare sem. Nullam at ullamcorper ante, nec laoreet orci. In hac habitasse platea dictumst. Aenean elementum dolor et fermentum interdum. Pellentesque mollis ut velit in ultrices. Duis accumsan odio sit amet ligula viverra sodales. Praesent nec libero tortor. Suspendisse sit amet tincidunt risus, vitae consectetur dolor. In hac habitasse platea dictumst. Cras a vestibulum risus. Integer sit amet sollicitudin magna. Suspendisse et purus sodales, scelerisque metus id, accumsan tellus. Mauris ultricies dolor libero, eu malesuada dolor ultricies a. Curabitur sit amet dui orci.</p>
-				<a href="#" class="mehrZumBuch button"><span class="btnLabel">mehr zum Buch</span></a>
-				<a href="#" class="startGame button forward eight columns"><span class="btnLabel">hier entlang</span></a>
-			</div>		
+                <?php if(isset($_SESSION['currentPage'])) {
+                    include $_SESSION['currentPage'] . ".php";
+                    if($_SESSION['currentPage'] == 'finalpage') {
+                        session_destroy();
+                    }
+                } else {
+                    include "home.php";
+                }?>
 		</div>
 		<div class="footer sixteen columns">
 		footer
