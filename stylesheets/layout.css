@@ -17,8 +17,77 @@
 /* #Site Styles
 ================================================== */
 
+.highlight {
+	text-transform: uppercase;
+	color: #900;
+	font-weight: bolder;
+}
+
+.button {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2em;
+	border: 0px !important;
+}
+
+.button.backward {
+	background: url(../images/backwardBtn.png) left center no-repeat;
+}
+
+.button.forward {
+	background: url(../images/forwardBtn.png) right center no-repeat;
+}
+
 /* #Page Styles
 ================================================== */
+
+body {
+	background: #e5e5e5;
+}
+
+.container {
+	background: #fff;
+}
+
+.heading {
+}
+
+.headerImg {
+	width: 100%;
+}
+
+.header {
+	display: none;
+}
+
+.mehrZumBuch {
+position: absolute;
+top: 120px;
+right: 0;
+width: 100px;
+height: 100px;
+background: url(../images/mehrZumBuch.png) left top no-repeat;
+padding: 0;
+border-radius: 50px;
+border: 0px;
+}
+
+.mehrZumBuch:hover {
+background: url(../images/mehrZumBuch_hover.png) left top no-repeat;}
+
+.mehrZumBuch .btnLabel {
+	display: none;
+}
+
+.contentWrapper {
+}
+
+.content {
+}
+
+.footer {
+	display: none !important;
+}
 
 /* #Media Queries
 ================================================== */
@@ -27,16 +96,48 @@
 	@media only screen and (max-width: 959px) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.mehrZumBuch {
+			top: 80px;	
+		}
+	}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+		.header {
+			display: block !important;
+		}
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+		.headerImg {
+			display: none;
+		}
+
+	.button {
+		position: relative;
+		background: #ddd !important;
+		width: 100% !important;
+		padding: 0px;
+		height: auto !important;
+		text-align: center;		
+		top: 0;
+		border-radius: 0px;
+	}
+									
+	.button .btnLabel {
+		display: block !important;
+	}
+
+	}
+
+	/* mobile landscape size to tablet portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+	}
 
 
 /* #Font-Face
