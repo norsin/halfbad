@@ -16,6 +16,7 @@
 
 /* #Site Styles
 ================================================== */
+/* common formatting styles */
 
 .highlight {
 	text-transform: uppercase;
@@ -38,8 +39,7 @@
 	background: url(../images/forwardBtn.png) right center no-repeat;
 }
 
-/* #Page Styles
-================================================== */
+/* structure styles */
 
 body {
 	background: #e5e5e5;
@@ -50,6 +50,11 @@ body {
 }
 
 .heading {
+	display: none !important;
+}
+
+.page-home .heading {
+	display: block !important;
 }
 
 .headerImg {
@@ -59,6 +64,21 @@ body {
 .header {
 	display: none;
 }
+
+
+.contentWrapper {
+}
+
+.content {
+}
+
+.footer {
+	display: none !important;
+}
+/* #Page Styles
+================================================== */
+
+/* home */
 
 .mehrZumBuch {
 position: absolute;
@@ -79,16 +99,32 @@ background: url(../images/mehrZumBuch_hover.png) left top no-repeat;}
 	display: none;
 }
 
-.contentWrapper {
+/* book page */
+
+.page-book .contentWrapper {
+	margin-top: 100px;
 }
 
-.content {
+.bookCover {
+	width: 100%;
 }
 
-.footer {
-	display: none !important;
+
+
+.zumTrailer {
+	position: absolute;
+	width: 100px !important;
+	height: 100px;
+	border-radius: 50px;
+	background: url(../images/zumTrailer.png) 0px 0px no-repeat !important;
+	left: 20px;
+	top: 60px;
+	padding: 0px;
 }
 
+.page-book .zumTrailer .btnLabel {
+	display: none;
+}
 /* #Media Queries
 ================================================== */
 
@@ -120,6 +156,7 @@ background: url(../images/mehrZumBuch_hover.png) left top no-repeat;}
 		height: auto !important;
 		text-align: center;		
 		top: 0;
+		left: 0;
 		border-radius: 0px;
 	}
 									

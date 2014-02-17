@@ -75,7 +75,6 @@ if(!isset($_SESSION['currentPage'])) {
 			<h1 class="header">Schwarz oder Weiss</h1>
 			<h2 class="header">auf welcher Seite stehst du?</h2>
 		</div>
-		<div class="contentWrapper eleven columns offset-by-four">
                 <?php if(isset($_SESSION['currentPage'])) {
                     include $_SESSION['currentPage'] . ".php";
                     if($_SESSION['currentPage'] == 'finalpage') {
@@ -84,7 +83,6 @@ if(!isset($_SESSION['currentPage'])) {
                 } else {
                     include "home.php";
                 }?>
-		</div>
 		<div class="footer sixteen columns">
 		footer
 		</div>
