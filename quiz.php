@@ -1,4 +1,4 @@
-<div class="quiz">
+<div class="contentWrapper sixteen columns quiz">
 <form method="post" action="scorequiz.php" class="quizform">
       <div class="newboxes" id="newboxes1" style="display: block;">
             <span class="frage">
@@ -158,5 +158,4 @@
 </form>
 </div>
 <div class="rightCol twoCol">
-    <img class="bookCover" src="images/buchcover.png" />
 </div>

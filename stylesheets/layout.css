@@ -79,6 +79,7 @@ body {
 ================================================== */
 
 /* home */
+/* ---- */
 
 .mehrZumBuch {
 position: absolute;
@@ -100,6 +101,7 @@ background: url(../images/mehrZumBuch_hover.png) left top no-repeat;}
 }
 
 /* book page */
+/* --------- */
 
 .page-book .contentWrapper {
 	margin-top: 100px;
@@ -108,8 +110,6 @@ background: url(../images/mehrZumBuch_hover.png) left top no-repeat;}
 .bookCover {
 	width: 100%;
 }
-
-
 
 .zumTrailer {
 	position: absolute;
@@ -125,6 +125,69 @@ background: url(../images/mehrZumBuch_hover.png) left top no-repeat;}
 .page-book .zumTrailer .btnLabel {
 	display: none;
 }
+
+/* quiz */
+/* ---- */
+
+.page-quiz .newboxes {min-height: 400px; padding: 100px;}
+
+.page-quiz #newboxes1 {background: #bbb}
+.page-quiz #newboxes2 {background: #ccc}
+.page-quiz #newboxes3 {background: #ddd}
+.page-quiz #newboxes4 {background: #eee}
+.page-quiz #newboxes5 {background: #fff}
+
+.quiz{
+}
+
+.page-quiz .newboxes {
+}
+
+.page-quiz .newboxes .frage {
+}
+
+.page-quiz .newboxes .antwort {
+margin-bottom: 20px;
+float: left;
+}
+
+.page-quiz .newboxes .antwort label {
+cursor: pointer;
+}
+
+.page-quiz .newboxes .radioArrow {
+display: none;
+}
+
+.page-quiz .newboxes .antwort .radioArrow:checked + label .arrowTool {
+background: #f90;
+}
+
+.page-quiz .newboxes .arrowTool {
+background: #fff;
+display: block;
+width: 40px;
+height: 40px;
+float: left;
+clear: left;
+}
+
+.page-quiz .newboxes .antwort-text {
+width: 80%;
+float: left;
+margin-left: 10px;
+}
+
+.page-quiz .newboxes .submitAnswer {
+clear: both;
+float:  left;
+}
+
+.quizResult {
+float: left;
+margin-top: 60px;
+}
+
 /* #Media Queries
 ================================================== */
 
@@ -168,12 +231,15 @@ background: url(../images/mehrZumBuch_hover.png) left top no-repeat;}
 
 	/* mobile landscape size to tablet portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
-
+	
+		.page-quiz .newboxes {min-height: 500px; padding: 50px;}
 
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
+
+		.page-quiz .newboxes {min-height: 650px; padding: 30px 20px;}
 	}
 
 
