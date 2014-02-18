@@ -186,13 +186,13 @@ h2.header {
 /* quiz */
 /* ---- */
 
-.page-quiz .newboxes {min-height: 400px; padding: 100px;}
+.page-quiz .newboxes {height: 100%; width: 70%;padding: 100px 15%;position: absolute;top: 0;left: 0; color: #fff;font-size: 1.4em;line-height: 1.4em;font-weight: bolder;}
 
-.page-quiz #newboxes1 {background: #bbb}
-.page-quiz #newboxes2 {background: #ccc}
-.page-quiz #newboxes3 {background: #ddd}
-.page-quiz #newboxes4 {background: #eee}
-.page-quiz #newboxes5 {background: #fff}
+.page-quiz #newboxes1 {background: url(../images/background_quiz01.jpg) 0px 0px no-repeat;}
+.page-quiz #newboxes2 {background: url(../images/background_quiz02.jpg) 0px 0px no-repeat;}
+.page-quiz #newboxes3 {background: url(../images/background_quiz03.jpg) 0px 0px no-repeat;}
+.page-quiz #newboxes4 {background: url(../images/background_quiz04.jpg) 0px 0px no-repeat;}
+.page-quiz #newboxes5 {background: url(../images/background_quiz05.jpg) 0px 0px no-repeat;}
 
 .quiz{
 }
@@ -234,6 +234,10 @@ clear: left;
 width: 80%;
 float: left;
 margin-left: 10px;
+font-size: 1.4em;
+line-height: 1.4em;
+font-weight: bolder;
+color: #fff;
 }
 
 .page-quiz .newboxes .submitAnswer {
