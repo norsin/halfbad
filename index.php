@@ -23,16 +23,16 @@ if(!isset($_SESSION['currentPage'])) {
   ================================================== -->
 	<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Your Page Title Here :)</title>
+	<title>CBT - Half Bad</title>
         <meta name="description" content="description text" />
-        <meta property="og:image" content="http://f-bilandia.de/heyne/kitzntusch/images/share.jpg"/>
-        <meta property="og:image:secure_url" content="https://f-bilandia.de/heyne/kitzntusch/images/share.jpg">
-        <meta property="og:image:type" content="image/jpg">
+        <meta property="og:image" content="http://f-bilandia.de/cbt/halfbad/images/share.png"/>
+        <meta property="og:image:secure_url" content="https://f-bilandia.de/cbt/halfbad/images/share.png">
+        <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="200">
         <meta property="og:image:height" content="200">
         <meta property="og:title" content="title text"/>
         <meta property="og:description" content="description text" />
-        <meta property="og:url" content="http://f-bilandia.de/heyne/kitzntusch/index.php"/>
+        <meta property="og:url" content="http://f-bilandia.de/cbt/halfbad/index.php"/>
 	<meta name="author" content="">
 
 	<!-- Mobile Specific Metas
