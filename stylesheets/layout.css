@@ -73,7 +73,7 @@
 /* structure styles */
 
 body {
-	background: #e5e5e5;
+	background: #000;
 }
 
 .container {
@@ -111,6 +111,10 @@ body {
 
 /* home */
 /* ---- */
+
+.page-home .container {
+	background: url(../images/background_start.jpg) #fff 0px 0px no-repeat;
+}
 
 .mehrZumBuch {
 position: absolute;
