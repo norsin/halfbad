@@ -39,6 +39,37 @@
 	background: url(../images/forwardBtn.png) right center no-repeat;
 }
 
+.modalWindow {
+	display: none;
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+	width: 86%;
+	margin: 10px 5%;
+	padding: 10px 2%;
+	min-height: 95%;
+	border-radius: 10px;
+	box-shadow: 1px 0px 10px #666;
+	color: #eee;
+	font-size: 0.9em;
+}
+
+.modalWindow a:link,
+.modalWindow a:visited {
+	color: #eee;
+}
+
+.modalWindow .close {
+	display: block;
+	background: #eee;
+	color: #333;
+	width: auto;
+	float: right;
+	clear: both;
+	border-radius: 5px;
+	padding: 3px 5px;
+	cursor: pointer;
+}
+
 /* structure styles */
 
 body {
@@ -216,6 +247,14 @@ margin-top: 60px;
 	margin-bottom: 20px;
 }
 
+.page-win .openContactForm {
+	display: block;
+}
+
+.page-win .openMobileContact {
+	display: none;
+}
+
 /* #Media Queries
 ================================================== */
 	/* Smaller than standard 960 (devices and browsers) */
@@ -264,12 +303,28 @@ margin-top: 60px;
 	
 		.page-quiz .newboxes {min-height: 500px; padding: 50px;}
 
+		.page-win .openContactForm {
+			display: none;
+		}
+
+		.page-win .openMobileContact {
+			display: block;
+		}
+
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 
 		.page-quiz .newboxes {min-height: 650px; padding: 30px 20px;}
+
+		.page-win .openContactForm {
+			display: none;
+		}
+
+		.page-win .openMobileContact {
+			display: block;
+		}
 	}
 
 
