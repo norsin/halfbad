@@ -1,53 +1,42 @@
 <?php
 // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
-// the email address you wish to receive these mails through
-$yourEmail = ""; 
-
-// the name of your website
-$yourWebsite = "";
-
-// URL to 'thanks for sending mail' page; leave empty to keep message on the same page
-$thanksPage = '';  
-
-// max points a person can hit before it refuses to submit - recommend 4
-$maxPoints = 4; 
-
-// names of the fields you'd like to be required as a minimum, separate each field with a comma
-// example: "name,address,cityZip,email"
-$requiredFields = "name"; 
-
-// names of the fields you want to exclude from the generated message
-// suggested "submit" to avoid "submit: send" in the mail body
-$excludeFromMessage = "submit"; 
+$yourEmail = "giovanni.canzio@gmail.com"; // the email address you wish to receive these mails through
+$yourWebsite = "Half Bad"; // the name of your website
+$thanksPage = ''; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
+$maxPoints = 4; // max points a person can hit before it refuses to submit - recommend 4
+$requiredFields = "name,address,cityZip,email"; // names of the fields you'd like to be required as a minimum, separate each field with a comma
+$excludeFromMessage = "regFormSubmit"; // names of the fields you want to exclude from the generated message
 
 // texts and messages
 // ------------------
 
 // the subject for the generated email
-$emailSubject = "Mail from your website!"; 
+$emailSubject = "Half Bad"; 
 
 // the generated email will start with this text
-// example: "";
-$emailIntro = "These data were sent from yout website:\r\n"; 
+$emailIntro = "Took part into Half Bad: \n\n"; 
 
 // message to display if the user misses mandatory fields
-$pleaseFill = "Please fill all the mandatory fields."; 
+$pleaseFill = "Bitte fülle alle Felder aus und sende das Formular erneut ab."; 
 
 // message to display if the user inputs invalid values in the name field
-$emptyNameField = "The name field contains invalid data.\r\n"; 
+$emptyNameField = "Das Namensfeld darf keine Sonderzeichen enthalten.\r\n"; 
 
 // message to display after successful email sending
-$thankyouMessage = 'Thanks for sending email!';
+$thankyouMessage = 'Danke f&uuml;r deine Teilnahme an unserem Gewinnspiel!';
 
 // message to display if user inputs invalid email
-$invalidEmail = "The email address is invalid.\r\n";
+$invalidEmail = "Die Emailadrese ist ungültig.\r\n";
+
+// message to display if age verification is not passed
+$noAgeVerification = "Du musst bitte bestätigen, dass du 18 Jahre alt bist.";
 
 // message to display if any problem occurs
-$genericProblem = 'Problem occurred! Plese write us at <a href="mailto:test@test.net">test@test.net</a>';
+$genericProblem = 'Ups, ein Fehler ist aufgetreten...';
 
 // message to display if user is suspected to spam
-$suspectSpam = 'You are suspected to be spamming...';
+$suspectSpam = 'Deine Mail steht unter Spamverdacht und konnte diesmal nicht gesendet werden. ['.$points.']';
 
 // ### END OF OPTIONS ###
 
@@ -75,7 +64,7 @@ function isBot() {
 	return false;
 }
 
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
+if (($_SERVER['REQUEST_METHOD'] == "POST") && (isset($_REQUEST['regFormSubmit']))) {
 	if (isBot() !== false)
 		$error_msg[] = "No bots please! UA reported as: ".$_SERVER['HTTP_USER_AGENT'];
 		
@@ -175,33 +164,57 @@ function get_data($var) {
 
 	To read the GNU General Public License, see http://www.gnu.org/licenses/.
 -->
+<link rel="stylesheet" href="css/answer.css" />
+<div class="gameResult win">
 
-<noscript>
-		<p><input type="hidden" name="nojs" id="nojs" /></p>
-</noscript>
-<p>
-	<label for="name">Name: </label> 
-		<input type="text" name="name" id="name" value="<?php get_data("name"); ?>" /><br />
-	
-	<label for="address">Address: </label> 
-		<input type="text" name="address" id="address" value="<?php get_data("address"); ?>" /><br />
-	
-	<label for="cityZip">ZIP and City: </label> 
-		<input type="text" name="cityZip" id="cityZip" value="<?php get_data("cityZip"); ?>" /><br />
-		
-	<label for="email">Email: </label>
-		<input type="text" name="email" id="email" value="<?php get_data("email"); ?>" /><br />
-	
-</p>
-<p>
-	<input type="submit" name="submit" id="submit" value="Senden" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?> />
-</p>
+    <?php
+    if (!empty($error_msg)) {
+            echo '<p class="error">ERROR: '. implode("<br />", $error_msg) . "</p>";
+    }
+    if ($result != NULL) {
+            echo '<p class="success">'. $result . "</p>";
+    }
+    ?>
+    
+    <form class="registerForm" <?php if (isset($disable) && $disable === true) echo ' style="display: none;"'; ?> method="post" action="<?php echo $_SERVER['PHP_SELF'] ;?>">
+        <div class="textBlock">
+		<p>This is an introductory text to be eventually expanded...</p>
+	</div>
 
-<?php
-if (!empty($error_msg)) {
-	echo '<p class="error">ERROR: '. implode("<br />", $error_msg) . "</p>";
-}
-if ($result != NULL) {
-	echo '<p class="success">'. $result . "</p>";
-}
-?>
+
+        <noscript>
+                        <p><input type="hidden" name="nojs" id="nojs" /></p>
+        </noscript>
+        <p>
+                <label for="name">Vor- und Nachname: *</label> 
+                        <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" /><br />
+
+                <label for="address">Straße und Hausnummer: *</label> 
+                        <input type="text" name="address" id="address" value="<?php get_data("address"); ?>" /><br />
+
+                <label for="cityZip">PLZ und Ort: *</label> 
+                        <input type="text" name="cityZip" id="cityZip" value="<?php get_data("cityZip"); ?>" /><br />
+
+                <label for="email">Mailadresse: *</label>
+                        <input type="text" name="email" id="email" value="<?php get_data("email"); ?>" /><br />
+               
+                <span class="ageVerification" style="font-size:11px;">
+                    <input type="checkbox" name="age_verification" value="verified" style="margin-top:8px; width: 15px;" <?php if(!empty($_POST['age_verification'])) { echo 'checked' ;} ?>/>
+                    <span style="text-decoration: underline">Ich bin unter 18 Jahre alt.</span> Das Einverständnis meiner Eltern zur Teilnahme an dieser Gewinnspielaktion habe ich eingeholt
+                </span>
+        </p>
+        <p>
+                <input type="submit" name="regFormSubmit" id="regFormSubmit" value="Senden" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?> />
+        </p>
+
+    </form>
+    
+    <?php if (isset($disable) && $disable === true) { ?>
+        
+        <form class="appNavigator" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                <button class="button backward eight columns" name="currentPage" value="home"><span class="btnLabel">homepage</span></span>
+        </form>
+    
+    <?php }?>
+    
+</div>
