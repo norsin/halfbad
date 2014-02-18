@@ -68,7 +68,7 @@ if(!isset($_SESSION['currentPage'])) {
         <script type="text/javascript">
             if (top == self) 
             { 
-                top.location = "https://www.facebook.com/pages/bilandia-Test/318672431558398?id=318672431558398&sk=app_533863763394990";
+                top.location = "https://www.facebook.com/pages/bilandia-Test/318672431558398?id=318672431558398&sk=app_533863763394990?ref=ts";
             }
         </script>
 </head>
@@ -97,10 +97,10 @@ if(!isset($_SESSION['currentPage'])) {
 ================================================== -->
 
 	<div class="container">
-		<div class="heading eleven columns offset-by-four">
+		<div class="heading eight offset-by-six">
 			<img src="images/homeTitle.png" class="headerImg" alt="Schwarz oder Weiss - auf welcher Seite stehst du?" />
-			<h1 class="header">Schwarz oder Weiss</h1>
-			<h2 class="header">auf welcher Seite stehst du?</h2>
+			<h1 class="header"><span class="schwarz">Schwarz</span> <span class="oder">oder</span> <span class="weiss">Weiss</span></h1>
+			<h2 class="header highlight">auf welcher Seite stehst du?</h2>
 		</div>
                 <?php if(isset($_SESSION['currentPage'])) {
                     include $_SESSION['currentPage'] . ".php";
