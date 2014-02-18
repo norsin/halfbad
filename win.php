@@ -1,5 +1,5 @@
 <div class="contentWrapper fourteen columns offset-by-one win resultProfile">
-
+	<img src="images/homeTitle.png" class="headerImg" alt="Schwarz oder Weiss - auf welcher Seite stehst du?" />
 	<?php
 	    $resultCharacters = array(
 		"profile-1" => array(
@@ -28,7 +28,7 @@
 	    )
 	?>
 
-	<h2 class="heading">Deine Einsch&auml;tzung</h2>
+	<h2 class="header">Deine Einsch&auml;tzung</h2>
 	<dl class="profileDetails">
 		<?php 
 

@@ -53,8 +53,7 @@ body {
 	display: none !important;
 }
 
-.page-home .heading,
-.page-win .heading {
+.page-home .heading {
 	display: block !important;
 }
 
@@ -193,9 +192,16 @@ margin-top: 60px;
 /* win page */
 /* -------- */
 
-
 .page-win .contentWrapper {
 	margin-top: 40px;
+}
+
+.page-win .headerImg {
+	width: auto;
+}
+
+.page-win .header {
+	display: block;
 }
 
 .page-win .profileDetails dt {
