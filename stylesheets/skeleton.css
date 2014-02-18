@@ -69,7 +69,12 @@
     .container .offset-by-fourteen              { padding-left: 87.5%; }
     .container .offset-by-fifteen               { padding-left: 93.7%; }
 
+/* #Facebook tab optimization
+================================================= */
 
+    @media only screen and (min-width: 809px) and (max-width: 811px) {
+	    .container				{ width: 100% !important; }
+    }
 
 /* #Tablet (Portrait)
 ================================================== */
