@@ -16,24 +16,51 @@ if(!isset($_SESSION['currentPage'])) {
 
 ?>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width">
-        <title>Warum uns das Denken nicht in den Kopf will</title>
-        <meta name="description" content="Wer weiß, wie andere ticken, gelangt schneller ans Ziel und bekommt genau das, was er will! Teste jetzt in unserem Quiz, ob du schon das Beste aus deinem Kopf herausholst und gewinne ein Exemplar von "Warum uns das Denken nicht in den Kopf will" der beiden Erfolgsautoren Dr. Volker Kitz und Dr. Manuel Tusch!" />
-        <link rel="image_src" href="">
+	<title>Your Page Title Here :)</title>
+        <meta name="description" content="description text" />
         <meta property="og:image" content="http://f-bilandia.de/heyne/kitzntusch/images/share.jpg"/>
         <meta property="og:image:secure_url" content="https://f-bilandia.de/heyne/kitzntusch/images/share.jpg">
         <meta property="og:image:type" content="image/jpg">
         <meta property="og:image:width" content="200">
         <meta property="og:image:height" content="200">
-        <meta property="og:title" content="Warum uns das Denken nicht in den Kopf will"/>
-        <meta property="og:description" content="Jetzt Fan werden und mehr aus deinem Kopf herausholen!" />
+        <meta property="og:title" content="title text"/>
+        <meta property="og:description" content="description text" />
         <meta property="og:url" content="http://f-bilandia.de/heyne/kitzntusch/index.php"/>
-        <link rel="stylesheet" href="css/frameset.css">
-        <link rel="stylesheet" href="css/quiz.css">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!-- Scripts 
+	================================================== -->
         <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="js/quiz.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
@@ -43,13 +70,14 @@ if(!isset($_SESSION['currentPage'])) {
                 top.location = "https://www.facebook.com/heyne.verlag/app_524473197648879?ref=ts"; 
             }
         </script>
-    </head>
-    <body class="<?php echo $bodyClass ?>">
+</head>
+<body class="<?php echo $bodyClass ?>">
+
         <div id="fb-root"></div>
         <script type="text/javascript">
             window.fbAsyncInit = function() {
                 //Your app details here
-                FB.init({appId: '1438987286314933', status: true, cookie: true, xfbml: true});
+                FB.init({appId: '533863763394990', status: true, cookie: true, xfbml: true});
                 //Resize the iframe when needed
                 FB.Canvas.setAutoResize();
             };
@@ -62,11 +90,17 @@ if(!isset($_SESSION['currentPage'])) {
                 document.getElementById('fb-root').appendChild(e);
             }());
         </script>
-        <div class="wrapper">
-            <div class="header fourCol">
-                <h1>Warum uns das <span class="emphasis">Denken</span> nicht in den Kopf will</h1>
-            </div>
-            <div class="content fourCol">
+
+
+<!-- Primary Page Layout
+================================================== -->
+
+	<div class="container">
+		<div class="heading eleven columns offset-by-four">
+			<img src="images/homeTitle.png" class="headerImg" alt="Schwarz oder Weiss - auf welcher Seite stehst du?" />
+			<h1 class="header">Schwarz oder Weiss</h1>
+			<h2 class="header">auf welcher Seite stehst du?</h2>
+		</div>
                 <?php if(isset($_SESSION['currentPage'])) {
                     include $_SESSION['currentPage'] . ".php";
                     if($_SESSION['currentPage'] == 'finalpage') {
@@ -75,14 +109,18 @@ if(!isset($_SESSION['currentPage'])) {
                 } else {
                     include "home.php";
                 }?>
-            </div>
-            <script type="text/javascript">
-                window.onload = function() {
-                    FB.Canvas.setAutoGrow();
-                }
-            </script>
-        </div>
+		<script type="text/javascript">
+			window.onload = function() {
+				FB.Canvas.setAutoGrow();
+			}
+		</script>
+		<div class="footer sixteen columns">
+		footer
+		</div>
+	</div>
 
-<p class="impressum">Veranstalter des Gewinnspiels ist allein der Heyne Verlag in der Verlagsgruppe Random House. Das Gewinnspiel steht in keiner Verbindung zu Facebook und wird in keiner Weise von Facebook gesponsert, unterstützt oder organisiert. – <a href="http://www.randomhouse.de/impressum.    jsp" target="_blank">Impressum</a></p>
-    </body>
+
+<!-- End Document
+================================================== -->
+</body>
 </html>

