@@ -162,11 +162,65 @@ h2.header {
 /* book page */
 /* --------- */
 
-.page-book .contentWrapper {
+.page-book .content {
 	margin-top: 100px;
 }
 
+.page-book .container {
+	background: url(../images/background_book01.jpg) 0px 0px no-repeat;
+}
+
+.page-book .leftCol {
+	width: 34% !important;
+}
+
+.page-book .rightCol {
+	width: 50% !important;
+	margin-left: 2%;
+}
+
+.page-book .appNavigator {
+	float: right;
+	width: 50%;
+	margin-right: 100px;
+}
+
+.page-book .leseproben {
+	width: 360px;
+	height: 30px;
+	padding: 0px;
+	background: url(../images/button_leseprobe.png) 0px -45px no-repeat;
+}
+
+.page-book .leseproben:hover {
+	background: url(../images/button_leseprobe.png) 0px -110px no-repeat;
+}
+
+.page-book .kaufen {
+	width: 284px;
+	height: 30px;
+	padding: 0px;
+	background: url(../images/button_kaufen.png) 0px -35px no-repeat;
+}
+
+.page-book .kaufen:hover {
+	background: url(../images/button_kaufen.png) 0px -91px no-repeat;
+}
+
+.page-book .backToHome {
+	width: 240px;
+	height: 60px;	
+	background: url(../images/button_zurueck.png) 0px 0px no-repeat;
+	margin-left: -20px;
+	margin-top: -10px;
+}
+
+.page-book .backToHome:hover {
+	background: url(../images/button_zurueck.png) 0px -56px no-repeat;
+}
+
 .bookCover {
+	display: none;
 	width: 100%;
 }
 
@@ -175,10 +229,19 @@ h2.header {
 	width: 100px !important;
 	height: 100px;
 	border-radius: 50px;
-	background: url(../images/zumTrailer.png) 0px 0px no-repeat !important;
-	left: 20px;
-	top: 60px;
+	background: none;
+	left: 30px;
+	top: 95px;
 	padding: 0px;
+}
+
+.zumTrailer:hover {
+	background: none;
+}
+
+.page-book .bookDetails {
+	margin: 400px auto auto 20px;
+	font-size: 0.7em;
 }
 
 .page-book .zumTrailer .btnLabel {
@@ -435,6 +498,33 @@ margin-top: 60px;
 			display: block;
 		}
 
+		.page-book .content {
+			margin-top: 20px;
+		}
+
+		.page-book .bookCover {
+			display: block;
+		}
+		
+		.page-book .leftCol,
+		.page-book .rightCol {
+			width: 80% !important;
+			margin: 0px 10%;
+		}
+
+		.page-book .bookDetails {
+			margin: 10px 0px;
+		}
+
+		.page-book .appNavigator {
+			width: 80%;
+			margin: 0px 10% !important;
+		}
+
+		.page-book .button {
+			color: #fff;
+		}
+
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -515,6 +605,34 @@ margin-top: 60px;
 
 		.page-win .openMobileContact {
 			display: block;
+		}
+
+		.page-book .content {
+			margin-top: 10px;
+			font-size: 1.25em !important;
+		}
+
+		.page-book .bookCover {
+			display: block;
+		}
+		
+		.page-book .leftCol,
+		.page-book .rightCol {
+			width: 90% !important;
+			margin: 0px 5%;
+		}
+
+		.page-book .bookDetails {
+			margin: 10px 0px;
+		}
+
+		.page-book .appNavigator {
+			width: 90%;
+			margin: 0px 5% !important;
+		}
+
+		.page-book .button {
+			color: #fff;
 		}
 	}
 

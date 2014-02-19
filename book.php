@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<div class="contentWrapper sixteen columns">
+<div class="content sixteen columns">
 	<div class="leftCol five columns offset-by-one">
 		<img src="images/bookCover.png" alt="book cover" class="bookCover">	
 		<p class="bookDetails">ISBN: xxx-x-xxx-xxxxx-x<br>
@@ -17,9 +17,9 @@
 		    $backTo = "home";
 		}
 		?>
-		<a href="#" target="_blank" class="button zumTrailer seven columns forward"><span class="btnLabel">zum Trailer</span></a>
-		<a href="#" target="_blank" class="button leseproben seven columns forward"><span class="btnLabel">Leseproben</span></a>
-		<a href="#" target="_blank" class="button kaufen seven columns forward"><span class="btnLabel">Kaufen</span></a>
-		<button class="button backToHome seven columns backward" name="currentPage" value="<?php echo $backTo?>"><span class="btnLabel">Zur&uuml;ck</span></button>
+		<a href="#" target="_blank" class="button zumTrailer"><span class="btnLabel">zum Trailer</span></a>
+		<a href="#" target="_blank" class="button leseproben"><span class="btnLabel">Leseproben</span></a>
+		<a href="#" target="_blank" class="button kaufen"><span class="btnLabel">Kaufen</span></a>
+		<button class="button backToHome" name="currentPage" value="<?php echo $backTo?>"><span class="btnLabel">Zur&uuml;ck</span></button>
 	</form>
 </div>
