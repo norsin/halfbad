@@ -188,6 +188,8 @@ h2.header {
 /* quiz */
 /* ---- */
 
+.page-quiz .container {background: none;}
+
 .page-quiz .newboxes {height: 100%; width: 70%;padding: 100px 15%;position: absolute;top: 0;left: 0; color: #fff;font-size: 1.4em;line-height: 1.4em;font-weight: bolder;}
 
 .page-quiz #newboxes1 {background: url(../images/background_quiz01.jpg) 0px 0px no-repeat;}
@@ -360,11 +362,6 @@ margin-top: 60px;
 	/* mobile landscape size to tablet portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-		.container {
-			background: none !important;	
-		}
-	
-
 		.contentWrapper {
 			width: 340px !important;
 			margin: 0px 40px !important;
@@ -398,6 +395,7 @@ margin-top: 60px;
 		.heading .oder {color: #B3060C;}
 		.heading .weiss {text-transform: uppercase; color: #fff}
 	
+		.container,
 		.page-quiz .newboxes {
 			background: #9b9a98 !important; /* Old browsers */
 			background: -moz-linear-gradient(top,  #9b9a98 0%, #c1bfc0 100%) !important; /* FF3.6+ */
@@ -442,10 +440,6 @@ margin-top: 60px;
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 
-		.container {
-			background: none !important;
-		}
-
 		.contentWrapper {
 			width: 260px !important;
 			margin: 0px 20px !important;
@@ -483,6 +477,7 @@ margin-top: 60px;
 			display: none;
 		}
 
+		.container,
 		.page-quiz .newboxes {
 			min-height: 650px; 
 			padding: 30px 20px;
@@ -498,6 +493,7 @@ margin-top: 60px;
 			color: #000;
 			font-weight: normal;
 			font-size: 1.1em;
+			width: 300px;
 		}
 
 		.page-quiz .newboxes .frage .question {
