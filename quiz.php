@@ -2,8 +2,8 @@
 <form method="post" action="scorequiz.php" class="quizform">
       <div class="newboxes" id="newboxes1" style="display: block;">
             <span class="frage">
-                <p class="h3yeah">FRAGE 1: <span class="emphasis">„Fuß in die Tür“-Effekt</span></p>
-                <p>Du  musst bis heute Abend noch eine Präsentation fertigstellen, hast aber ein Date und möchtest deshalb früher gehen. Wie bringst du den neuen Kollegen dazu, deine Arbeit zu übernehmen?</p>
+                <p class="intro">FRAGE 1: <span class="emphasis">„Fuß in die Tür“-Effekt</span></p>
+                <p class="question">Du  musst bis heute Abend noch eine Präsentation fertigstellen, hast aber ein Date und möchtest deshalb früher gehen. Wie bringst du den neuen Kollegen dazu, deine Arbeit zu übernehmen?</p>
             </span>
             <span class="antwort threeCol">
                   <input type="radio" name="a" value="profile-1" class="radioArrow" id="antwort-a-1">
@@ -29,12 +29,12 @@
                   </label>
                   
             </span>
-            <button class="newboxes2 button submitAnswer">WEITER</button>
+            <button class="newboxes2 button submitAnswer"><span class="btnLabel">WEITER</span></button>
       </div>
       <div class="newboxes" id="newboxes2" style="display: none;">
             <span class="frage">
-                <p class="h3yeah">FRAGE 2: <span class="emphasis">Selbstwahrnehmung</span></p>
-                <p>Du wünschst dir nichts sehnlicher als eine Katze! Allerdings weißt du nicht, ob dein Partner, mit dem du die Wohnung teilst, das auch möchte. Wie gehst du vor?</p>
+                <p class="intro">FRAGE 2: <span class="emphasis">Selbstwahrnehmung</span></p>
+                <p class="question">Du wünschst dir nichts sehnlicher als eine Katze! Allerdings weißt du nicht, ob dein Partner, mit dem du die Wohnung teilst, das auch möchte. Wie gehst du vor?</p>
             </span>
             <span class="antwort threeCol">
                   <input type="radio" name="b" value="profile-1" class="radioArrow" id="antwort-b-1">
@@ -60,12 +60,12 @@
                   </label>
                   
             </span>
-            <button class="newboxes3 button submitAnswer">WEITER</button>
+            <button class="newboxes3 button submitAnswer"><span class="btnLabel">WEITER</span></button>
       </div>
       <div class="newboxes" id="newboxes3" style="display: none;">
             <span class="frage">
-                <p class="h3yeah">FRAGE 3: <span class="emphasis">Zwei-Faktoren-Theorie</span></p>
-                <p>Deine äußerst attraktive Nachbarin hat dich auf einen Kaffee eingeladen.  Während des Treffens läuft dein Puls auf Hochtouren! Oder liegt es an der Spinne, die über ihren Teller läuft?</p>
+                <p class="intro">FRAGE 3: <span class="emphasis">Zwei-Faktoren-Theorie</span></p>
+                <p class="question">Deine äußerst attraktive Nachbarin hat dich auf einen Kaffee eingeladen.  Während des Treffens läuft dein Puls auf Hochtouren! Oder liegt es an der Spinne, die über ihren Teller läuft?</p>
             </span>
             <span class="antwort threeCol">
                   <input type="radio" name="c" value="profile-1" class="radioArrow" id="antwort-c-1">
@@ -91,12 +91,12 @@
                   </label>
                   
             </span>
-            <button class="newboxes4 button submitAnswer">WEITER</button>
+            <button class="newboxes4 button submitAnswer"><span class="btnLabel">WEITER</span></button>
       </div>
       <div class="newboxes" id="newboxes4" style="display: none;">
             <span class="frage">
-                <p class="h3yeah">FRAGE 4: <span class="emphasis">Unterlassungsirrtum</span></p>
-                <p>Soll ich’s wirklich machen, oder lass ich’s lieber sein? Jein? –Wie gehst du in schwierigen Situationen vor, um deine richtige Entscheidung zu treffen?</p>
+                <p class="intro">FRAGE 4: <span class="emphasis">Unterlassungsirrtum</span></p>
+                <p class="question">Soll ich’s wirklich machen, oder lass ich’s lieber sein? Jein? –Wie gehst du in schwierigen Situationen vor, um deine richtige Entscheidung zu treffen?</p>
             </span>
             <span class="antwort threeCol">
                   <input type="radio" name="d" value="profile-1" class="radioArrow" id="antwort-d-1">
@@ -122,12 +122,12 @@
                   </label>
                   
             </span>
-            <button class="newboxes5 button submitAnswer">WEITER</button>
+            <button class="newboxes5 button submitAnswer"><span class="btnLabel">WEITER</span></button>
       </div>
       <div class="newboxes" id="newboxes5" style="display: none;">
             <span class="frage">
-                <p class="h3yeah">FRAGE 5: <span class="emphasis">Zero Risk Bias</span></p>
-                <p>In der Sportmannschaft deines Freundes sind zwei neue Singlefrauen eingetreten, mit denen er sich ausgezeichnet versteht. Vielleicht zu gut? Was tust du, um die Situation zu entschärfen?</p>
+                <p class="intro">FRAGE 5: <span class="emphasis">Zero Risk Bias</span></p>
+                <p class="question">In der Sportmannschaft deines Freundes sind zwei neue Singlefrauen eingetreten, mit denen er sich ausgezeichnet versteht. Vielleicht zu gut? Was tust du, um die Situation zu entschärfen?</p>
             </span>
             <span class="antwort threeCol">
                   <input type="radio" name="e" value="profile-1" class="radioArrow" id="antwort-e-1">
@@ -153,7 +153,7 @@
                   </label>
                   
             </span>
-            <button type="submit" value="Ergebnis" class="submitAnswer button submitForm">WEITER</button>
+            <button type="submit" value="Ergebnis" class="submitAnswer button submitForm"><span class="btnLabel">WEITER</span></button>
       </div>
 </form>
 </div>

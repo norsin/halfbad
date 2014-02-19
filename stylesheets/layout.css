@@ -23,11 +23,13 @@
 	color: #B3060C;
 }
 
-.button {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 2em;
-	border: 0px !important;
+.button,
+.button:hover {
+	border: 0px;
+}
+
+.button .btnLabel {
+	display: none;
 }
 
 .modalWindow {
@@ -203,6 +205,12 @@ h2.header {
 .page-quiz .newboxes .frage {
 }
 
+.page-quiz .newboxes .frage .intro {
+}
+
+.page-quiz .newboxes .frage .question {
+}
+
 .page-quiz .newboxes .antwort {
 margin-bottom: 20px;
 float: left;
@@ -216,18 +224,19 @@ cursor: pointer;
 display: none;
 }
 
-.page-quiz .newboxes .antwort .radioArrow:checked + label .arrowTool {
-background: #f90;
-}
-
 .page-quiz .newboxes .arrowTool {
-background: #fff;
-border: 1px solid #ddd;
+background: url(../images/button_quiz.png) -13px -96px no-repeat;
 display: block;
-width: 40px;
-height: 40px;
+width: 45px;
+height: 45px;
 float: left;
 clear: left;
+margin-top: 5px;
+margin-right: 20px;
+}
+
+.page-quiz .newboxes .antwort .radioArrow:checked + label .arrowTool {
+background: url(../images/button_quiz.png) -13px -14px no-repeat;
 }
 
 .page-quiz .newboxes .antwort-text {
@@ -243,6 +252,11 @@ color: #fff;
 .page-quiz .newboxes .submitAnswer {
 clear: both;
 float:  left;
+width: 224px;
+height: 45px;
+padding: 0px;
+background: url(../images/button_weiter.png) 0px 0px no-repeat;
+margin: 10px auto auto 45px;
 }
 
 .quizResult {
@@ -347,15 +361,9 @@ margin-top: 60px;
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 
 		.container {
-			background: #9b9a98 !important; /* Old browsers */
-			background: -moz-linear-gradient(top,  #9b9a98 0%, #c1bfc0 100%) !important; /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b9a98), color-stop(100%,#c1bfc0)) !important; /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* IE10+ */
-			background: linear-gradient(to bottom,  #9b9a98 0%,#c1bfc0 100%) !important; /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9a98', endColorstr='#c1bfc0',GradientType=0 ) !important; /* IE6-9 */
+			background: none !important;	
 		}
+	
 
 		.contentWrapper {
 			width: 340px !important;
@@ -365,11 +373,11 @@ margin-top: 60px;
 
 		.button {
 			font-size: 1em;
-			margin: 10px 0px;
+			margin: 10px 0px !important;
 			background: #B3060C !important;
 			color: #fff;
 			text-shadow: none;
-			padding: 10px 0px;
+			padding: 10px 0px !important;
 			border-radius: 5px;
 		}
 
@@ -390,7 +398,36 @@ margin-top: 60px;
 		.heading .oder {color: #B3060C;}
 		.heading .weiss {text-transform: uppercase; color: #fff}
 	
-		.page-quiz .newboxes {min-height: 500px; padding: 50px;}
+		.page-quiz .newboxes {
+			background: #9b9a98 !important; /* Old browsers */
+			background: -moz-linear-gradient(top,  #9b9a98 0%, #c1bfc0 100%) !important; /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b9a98), color-stop(100%,#c1bfc0)) !important; /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* IE10+ */
+			background: linear-gradient(to bottom,  #9b9a98 0%,#c1bfc0 100%) !important; /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9a98', endColorstr='#c1bfc0',GradientType=0 ) !important; /* IE6-9 */
+			height: auto;
+			color: #000;
+			padding-top: 20px;
+			font-weight: normal;
+		}
+
+		.page-quiz .newboxes .antwort-text {
+			color: #000;
+			font-weight: normal;
+			width: 75%;
+		} 
+
+		.page-quiz .newboxes .arrowTool {
+			margin-right: 0px;
+		}
+		
+		.page-quiz .newboxes .frage .question {
+			color: #B3060C;
+			text-transform: uppercase;
+			font-weight: normal;
+		}
 
 		.page-win .openContactForm {
 			display: none;
@@ -406,14 +443,7 @@ margin-top: 60px;
 	@media only screen and (max-width: 479px) {
 
 		.container {
-			background: #9b9a98 !important; /* Old browsers */
-			background: -moz-linear-gradient(top,  #9b9a98 0%, #c1bfc0 100%) !important; /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b9a98), color-stop(100%,#c1bfc0)) !important; /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* IE10+ */
-			background: linear-gradient(to bottom,  #9b9a98 0%,#c1bfc0 100%) !important; /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9a98', endColorstr='#c1bfc0',GradientType=0 ) !important; /* IE6-9 */
+			background: none !important;
 		}
 
 		.contentWrapper {
@@ -424,11 +454,11 @@ margin-top: 60px;
 
 		.button {
 			font-size: 1em;
-			margin: 10px 0px;
+			margin: 10px 0px !important;
 			background: #B3060C !important;
 			color: #fff;
 			text-shadow: none;
-			padding: 10px 0px;
+			padding: 10px 0px !important;
 			border-radius: 5px;
 		}
 
@@ -449,10 +479,42 @@ margin-top: 60px;
 		.heading .oder {color: #B3060C;}
 		.heading .weiss {text-transform: uppercase; color: #fff}
 
-		.page-quiz .newboxes {min-height: 650px; padding: 30px 20px;}
-
 		.page-win .openContactForm {
 			display: none;
+		}
+
+		.page-quiz .newboxes {
+			min-height: 650px; 
+			padding: 30px 20px;
+			background: #9b9a98 !important; /* Old browsers */
+			background: -moz-linear-gradient(top,  #9b9a98 0%, #c1bfc0 100%) !important; /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b9a98), color-stop(100%,#c1bfc0)) !important; /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* IE10+ */
+			background: linear-gradient(to bottom,  #9b9a98 0%,#c1bfc0 100%) !important; /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9a98', endColorstr='#c1bfc0',GradientType=0 ) !important; /* IE6-9 */
+			height: auto;
+			color: #000;
+			font-weight: normal;
+			font-size: 1.1em;
+		}
+
+		.page-quiz .newboxes .frage .question {
+			color: #B3060C;
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+
+		.page-quiz .newboxes .antwort-text {
+			color: #000;
+			font-weight: normal;
+			width: 70%;
+			font-size: 1.1em;
+		} 
+
+		.page-quiz .newboxes .arrowTool {
+			margin-right: 0px;
 		}
 
 		.page-win .openMobileContact {
