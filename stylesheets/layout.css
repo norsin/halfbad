@@ -477,17 +477,44 @@ margin-top: 60px;
 		.page-quiz .newboxes .antwort-text {
 			color: #000;
 			font-weight: normal;
-			width: 75%;
+			width: 68%;
 		} 
 
 		.page-quiz .newboxes .arrowTool {
 			margin-right: 0px;
+			width: 80px;
+			height: 80px;
 		}
 		
 		.page-quiz .newboxes .frage .question {
 			color: #B3060C;
 			text-transform: uppercase;
 			font-weight: normal;
+		}
+		
+		.page-quiz .newboxes .antwort:nth-child(2) .arrowTool {
+			background: url(../images/button_quiz_mobile1.png) 0px 0px no-repeat;
+		}
+
+		.page-quiz .newboxes .antwort:nth-child(3) .arrowTool {
+			background: url(../images/button_quiz_mobile2.png) 0px 0px no-repeat;
+		}
+
+		.page-quiz .newboxes .antwort:nth-child(4) .arrowTool {
+			background: url(../images/button_quiz_mobile3.png) 0px 0px no-repeat;
+		}
+
+
+		.page-quiz .newboxes .antwort:nth-child(2) .radioArrow:checked + label .arrowTool {
+			background: #f90;
+		}
+
+		.page-quiz .newboxes .antwort:nth-child(3) .radioArrow:checked + label .arrowTool {
+			background: #f90;
+		}
+
+		.page-quiz .newboxes .antwort:nth-child(4) .radioArrow:checked + label .arrowTool {
+			background: #f90;
 		}
 
 		.page-win .openContactForm {
@@ -601,6 +628,33 @@ margin-top: 60px;
 
 		.page-quiz .newboxes .arrowTool {
 			margin-right: 0px;
+			width: 45px;
+			height: 45px;
+		}
+
+		.page-quiz .newboxes .antwort:nth-child(2) .arrowTool {
+			background: url(../images/button_quiz_mobile1_small.png) 0px 0px no-repeat;
+		}
+
+		.page-quiz .newboxes .antwort:nth-child(3) .arrowTool {
+			background: url(../images/button_quiz_mobile2_small.png) 0px 0px no-repeat;
+		}
+
+		.page-quiz .newboxes .antwort:nth-child(4) .arrowTool {
+			background: url(../images/button_quiz_mobile3_small.png) 0px 0px no-repeat;
+		}
+
+
+		.page-quiz .newboxes .antwort:nth-child(2) .radioArrow:checked + label .arrowTool {
+			background: #f90;
+		}
+
+		.page-quiz .newboxes .antwort:nth-child(3) .radioArrow:checked + label .arrowTool {
+			background: #f90;
+		}
+
+		.page-quiz .newboxes .antwort:nth-child(4) .radioArrow:checked + label .arrowTool {
+			background: #f90;
 		}
 
 		.page-win .openMobileContact {
