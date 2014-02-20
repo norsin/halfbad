@@ -332,6 +332,10 @@ margin-top: 60px;
 /* win page */
 /* -------- */
 
+.page-win .container {
+	background: url(../images/background_final.jpg) 0px 0px no-repeat;
+}
+
 .page-win .contentWrapper {
 	margin-top: 40px;
 }
@@ -344,14 +348,19 @@ margin-top: 60px;
 	display: block;
 }
 
+.page-win .profileDetails {
+	font-size: 1.35em !important;
+	margin-left: 20px;
+}
+
 .page-win .profileDetails dt {
 	font-weight: bolder;
 	float: left;
-	width: 20%;
+	width: 30%;
 }
 
 .page-win .profileDetails dd {
-	width: 80%;
+	width: 60%;
 	float: left;
 	margin-bottom: 20px;
 }
@@ -362,6 +371,33 @@ margin-top: 60px;
 
 .page-win .openMobileContact {
 	display: none;
+}
+
+.page-win .appNavigator {
+	width: 80%;
+	margin-left: 60px;
+	margin-top: 100px;
+	float: left;
+}
+
+.page-win .zumBuch {
+	width: 300px;
+	height: 30px;
+	background: url(../images/button_zumbuch.png) -14px -20px no-repeat;
+}
+
+.page-win .zumBuch:hover {
+	background: url(../images/button_zumbuch.png) -14px -86px no-repeat;
+}
+
+.page-win .gewinnSpiel {
+	width: 370px;
+	height: 35px;
+	background: url(../images/button_gewinnspiel.png) -27px -35px no-repeat;
+}
+
+.page-win .gewinnSpiel:hover {
+	background: url(../images/button_gewinnspiel.png) -27px -103px no-repeat;
 }
 
 /* #Media Queries
@@ -525,6 +561,15 @@ margin-top: 60px;
 			display: block;
 		}
 
+		.page-win .resultProfile .header {
+			color: #B3060C;
+		}
+
+		.page-win .appNavigator {
+			width: 100%;
+			margin: 0px;
+		}
+
 		.page-book .content {
 			margin-top: 20px;
 		}
@@ -558,8 +603,6 @@ margin-top: 60px;
 	@media only screen and (max-width: 479px) {
 
 		.contentWrapper {
-			width: 260px !important;
-			margin: 0px 20px !important;
 			font-size: 0.9em !important;
 		}
 
@@ -659,6 +702,19 @@ margin-top: 60px;
 
 		.page-win .openMobileContact {
 			display: block;
+		}
+
+		.page-win .contentWrapper {
+				margin-top: 0px;
+			}
+
+		.page-win .resultProfile .header {
+			color: #B3060C;
+		}
+
+		.page-win .appNavigator {
+			width: 100%;
+			margin: 0px;
 		}
 
 		.page-book .content {

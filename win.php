@@ -42,8 +42,8 @@
 	</dl>
 	<form class="appNavigator" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <input type="hidden" name="backTo" value="win" />
-	    <button name="currentPage" value="mailFormPage" class="button forward openContactForm eight columns"><span class="btnLabel">Gewinnspiel (D)</span></button>
-	    <button name="currentPage" value="contactPage" class="button forward openMobileContact eight columns"><span class="btnLabel">Gewinnspiel (M)</span></button>
-	    <button name="currentPage" value="book" class="button bookBtn forward eight columns"><span class="btnLabel">zum Buch</span></button>
+	    <button name="currentPage" value="book" class="button bookBtn forward zumBuch"><span class="btnLabel">zum Buch</span></button>
+	    <button name="currentPage" value="mailFormPage" class="button forward openContactForm gewinnSpiel"><span class="btnLabel">Gewinnspiel</span></button>
+	    <button name="currentPage" value="contactPage" class="button forward openMobileContact"><span class="btnLabel">Gewinnspiel</span></button>
 	</form>
 </div>
