@@ -176,7 +176,7 @@ function get_data($var) {
     }
     ?>
     
-    <form class="registerForm" <?php if (isset($disable) && $disable === true) echo ' style="display: none;"'; ?> method="post" action="<?php echo $_SERVER['PHP_SELF'] ;?>">
+    <form class="registerForm twelve columns offset-by-two" <?php if (isset($disable) && $disable === true) echo ' style="display: none;"'; ?> method="post" action="<?php echo $_SERVER['PHP_SELF'] ;?>">
         <div class="textBlock">
 		<p>This is an introductory text to be eventually expanded...</p>
 	</div>

@@ -400,6 +400,14 @@ margin-top: 60px;
 	background: url(../images/button_gewinnspiel.png) -27px -103px no-repeat;
 }
 
+/* mailform page */
+/* ------------- */
+
+.page-mailFormPage .container {
+	background: url(../images/background_final.jpg) 0px 0px no-repeat;
+}
+
+
 /* #Media Queries
 ================================================== */
 	/* Smaller than standard 960 (devices and browsers) */
