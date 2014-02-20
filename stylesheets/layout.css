@@ -63,6 +63,12 @@
 	cursor: pointer;
 }
 
+.fangate {
+	background: url(../images/fangate.jpg) 0px 0px no-repeat;
+	width: 810px;
+	height: 840px;
+}
+
 /* structure styles */
 
 body {

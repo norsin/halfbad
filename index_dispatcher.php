@@ -1,7 +1,5 @@
 <?php session_start(); 
 header('P3P: CP="NOI ADM DEV COM NAV OUR STP"');
-//Get PHP SDK
-require_once 'facebook.php';
 
 if(isset($_REQUEST['currentPage'])) {
     $_SESSION['currentPage'] = $_REQUEST['currentPage'];
@@ -73,7 +71,17 @@ if(!isset($_SESSION['currentPage'])) {
         </script>
 </head>
 <body class="<?php echo $bodyClass ?>">
-
+<?php
+	//Get PHP SDK
+	require_once 'facebook.php';
+	// Create our Application instance.
+	$facebook = new Facebook( array('appId' => '533863763394990',
+	'secret' => 'e5533a476c6aa4193ec3c9044f566ff0', 'cookie' => true, ));
+	$signed_request = $facebook -> getSignedRequest();
+	$like_status = $signed_request["page"]["liked"];
+	if ($like_status == "1") {
+	//If the page is liked then display full app.
+?>
         <div id="fb-root"></div>
         <script type="text/javascript">
             window.fbAsyncInit = function() {
@@ -119,7 +127,35 @@ if(!isset($_SESSION['currentPage'])) {
 		footer
 		</div>
 	</div>
+<?php } else { ?>
 
+        <div id="fb-root"></div>
+        <script type="text/javascript">
+            window.fbAsyncInit = function() {
+                //Your app details here
+                FB.init({appId: '533863763394990', status: true, cookie: true, xfbml: true});
+                //Resize the iframe when needed
+                FB.Canvas.setAutoResize();
+            };
+    
+            //Load the SDK asynchronously
+            (function() {
+                var e = document.createElement('script'); e.async = true;
+                e.src = document.location.protocol +
+                  '//connect.facebook.net/en_US/all.js';
+                document.getElementById('fb-root').appendChild(e);
+            }());
+        </script>
+
+        <!-- Fangate-Bild bitte einsetzen -->
+        <div class="fangate">
+        </div>
+	<script type="text/javascript">
+		window.onload = function() {
+			FB.Canvas.setAutoGrow();
+		}
+	</script>
+<?php } ?>
 
 <!-- End Document
 ================================================== -->
