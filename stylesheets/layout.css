@@ -79,7 +79,6 @@ body {
 	background: #fff;
 	font-family: "Georgia", "Times New Roman", serif;
 	color: #000;
-	min-height: 780px;
 	padding-top: 60px;
 }
 
@@ -125,6 +124,7 @@ h2.header {
 
 .page-home .container {
 	background: url(../images/background_start.jpg) #fff 0px 0px no-repeat;
+	height: 740px;
 }
 
 .mehrZumBuch {
@@ -169,7 +169,7 @@ h2.header {
 /* --------- */
 
 .page-book .content {
-	margin-top: 100px;
+	margin-top: 85px;
 }
 
 .page-book .container {
@@ -189,6 +189,7 @@ h2.header {
 	float: right;
 	width: 50%;
 	margin-right: 100px;
+	margin-bottom: 0px;
 }
 
 .page-book .leseproben {
@@ -196,6 +197,7 @@ h2.header {
 	height: 30px;
 	padding: 0px;
 	background: url(../images/button_leseprobe.png) 0px -45px no-repeat;
+	margin-bottom: 10px;
 }
 
 .page-book .leseproben:hover {
@@ -207,6 +209,7 @@ h2.header {
 	height: 30px;
 	padding: 0px;
 	background: url(../images/button_kaufen.png) 0px -35px no-repeat;
+	margin-bottom: 10px;
 }
 
 .page-book .kaufen:hover {
@@ -219,6 +222,7 @@ h2.header {
 	background: url(../images/button_zurueck.png) 0px 0px no-repeat;
 	margin-left: -20px;
 	margin-top: -10px;
+	margin-bottom: 18px;
 }
 
 .page-book .backToHome:hover {
@@ -259,7 +263,7 @@ h2.header {
 
 .page-quiz .container {background: none;}
 
-.page-quiz .newboxes {height: 100%; width: 70%;padding: 100px 15%;position: absolute;top: 0;left: 0; color: #fff;font-size: 1.4em;line-height: 1.4em;font-weight: bolder;}
+.page-quiz .newboxes {width: 70%; height: 600px; padding: 100px 15%;position: absolute;top: 0;left: 0; color: #fff;font-size: 1.4em;line-height: 1.4em;font-weight: bolder;}
 
 .page-quiz #newboxes1 {background: url(../images/background_quiz01.jpg) 0px 0px no-repeat;}
 .page-quiz #newboxes2 {background: url(../images/background_quiz02.jpg) 0px 0px no-repeat;}
@@ -343,11 +347,13 @@ margin-top: 60px;
 }
 
 .page-win .contentWrapper {
-	margin-top: 40px;
+	margin-top: 10px;
+	height: 730px;
 }
 
 .page-win .headerImg {
 	width: auto;
+	margin-left: 0;
 }
 
 .page-win .header {
@@ -382,7 +388,7 @@ margin-top: 60px;
 .page-win .appNavigator {
 	width: 80%;
 	margin-left: 60px;
-	margin-top: 100px;
+	margin-top: 87px;
 	float: left;
 }
 
@@ -411,6 +417,7 @@ margin-top: 60px;
 
 .page-mailFormPage .container {
 	background: url(../images/background_final.jpg) 0px 0px no-repeat;
+	height: 740px;
 }
 
 

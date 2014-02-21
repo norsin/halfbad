@@ -1,20 +1,3 @@
-<?php session_start(); 
-header('P3P: CP="NOI ADM DEV COM NAV OUR STP"');
-//Get PHP SDK
-require_once 'facebook.php';
-
-if(isset($_REQUEST['currentPage'])) {
-    $_SESSION['currentPage'] = $_REQUEST['currentPage'];
-}
-
-if(!isset($_SESSION['currentPage'])) {
-    $_SESSION['currentPage'] = 'home';
-    $bodyClass = "page-" . $_SESSION['currentPage'];
-} else {
-    $bodyClass = "page-" . $_SESSION['currentPage'];
-}
-
-?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -68,19 +51,35 @@ if(!isset($_SESSION['currentPage'])) {
         <script type="text/javascript">
             if (top == self) 
             { 
-                top.location = "https://www.facebook.com/pages/bilandia-Test/318672431558398?id=318672431558398&sk=app_533863763394990";
+                top.location = "https://www.facebook.com/pages/bilandia-Test/318672431558398?id=318672431558398&sk=app_533863763394990?ref=ts";
             }
         </script>
 </head>
-<body class="<?php echo $bodyClass ?>">
+<body> 
+<?php
+	//Get PHP SDK
+	require_once 'facebook.php';
+	// Create our Application instance.
+	$facebook = new Facebook( array('appId' => '533863763394990',
+	'secret' => 'e5533a476c6aa4193ec3c9044f566ff0', 'cookie' => true, ));
+	$signed_request = $facebook -> getSignedRequest();
+	$like_status = $signed_request["page"]["liked"];
+	if ($like_status == "1") {
+	//If the page is liked then display full app.
+
+        header("location: index.php");
+
+	} else { ?>
 
         <div id="fb-root"></div>
         <script type="text/javascript">
             window.fbAsyncInit = function() {
                 //Your app details here
                 FB.init({appId: '533863763394990', status: true, cookie: true, xfbml: true});
+                //Resize the iframe when needed
+                FB.Canvas.setAutoResize();
             };
-
+    
             //Load the SDK asynchronously
             (function() {
                 var e = document.createElement('script'); e.async = true;
@@ -90,34 +89,15 @@ if(!isset($_SESSION['currentPage'])) {
             }());
         </script>
 
-
-<!-- Primary Page Layout
-================================================== -->
-
-	<div class="container">
-		<div class="heading eight offset-by-six">
-			<img src="images/homeTitle.png" class="headerImg" alt="Schwarz oder Weiss - auf welcher Seite stehst du?" />
-			<h1 class="header"><span class="schwarz">Schwarz</span> <span class="oder">oder</span> <span class="weiss">Weiss</span></h1>
-			<h2 class="header highlight">auf welcher Seite stehst du?</h2>
-		</div>
-                <?php if(isset($_SESSION['currentPage'])) {
-                    include $_SESSION['currentPage'] . ".php";
-                    if($_SESSION['currentPage'] == 'finalpage') {
-                        session_destroy();
-                    }
-                } else {
-                    include "home.php";
-                }?>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				FB.Canvas.setAutoGrow();
-			})
-		</script>
-		<div class="footer sixteen columns">
-		footer
-		</div>
-	</div>
-
+        <!-- Fangate-Bild bitte einsetzen -->
+        <div class="fangate">
+        </div>
+	<script type="text/javascript">
+		window.onload = function() {
+			FB.Canvas.setAutoGrow();
+		}
+	</script>
+<?php } ?>
 
 <!-- End Document
 ================================================== -->
