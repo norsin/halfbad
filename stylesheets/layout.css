@@ -591,6 +591,10 @@ margin-top: 60px;
 			margin: 0px;
 		}
 
+		.page-win .button {
+			font-size: 1.4em;
+		}
+
 		.page-book .content {
 			margin-top: 20px;
 		}
@@ -661,6 +665,7 @@ margin-top: 60px;
 		.container,
 		.page-quiz .newboxes {
 			min-height: 650px; 
+			height: auto !important;
 			padding: 30px 20px;
 			background: #9b9a98 !important; /* Old browsers */
 			background: -moz-linear-gradient(top,  #9b9a98 0%, #c1bfc0 100%) !important; /* FF3.6+ */
