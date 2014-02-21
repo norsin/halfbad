@@ -6,7 +6,7 @@
 		<form class="appNavigator" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
 			<input type="hidden" name="backTo" value="home" />
 			<button class="mehrZumBuch button" name="currentPage" value="book"><span class="btnLabel">mehr zum Buch</span></button>
-			<button class="startGame button" name="currentPage" value="quiz"><span class="btnLabel">hier entlang</span></span>
+			<button class="startGame button" name="currentPage" value="quiz"><span class="btnLabel">hier entlang</span></button>
 		</form>
 	</div>		
 </div>
