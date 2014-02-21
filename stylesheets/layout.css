@@ -28,6 +28,10 @@
 	border: 0px;
 }
 
+*:focus {
+	outline: none;
+}
+
 .button .btnLabel {
 	display: none;
 }
