@@ -424,6 +424,31 @@ margin-top: 60px;
 	height: 740px;
 }
 
+.page-mailFormPage .registerForm {
+	font-size: 1.4em;
+	margin-top: 100px;
+}
+
+.page-mailFormPage .registerForm .textBlock  {
+	width: 80%;	
+}
+
+.page-mailFormPage .registerForm input  {
+	width: 100%;
+}
+
+.page-mailFormPage .registerForm #regFormSubmit {
+	width: 35%;
+	float: right;
+	margin-top: -20px;
+	font-size: 1em;
+	background: #B3060C !important;
+	color: #fff;
+	text-shadow: none;
+	padding: 10px 0px !important;
+	border-radius: 5px;
+	border: none;
+}
 
 /* #Media Queries
 ================================================== */
