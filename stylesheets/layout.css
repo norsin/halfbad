@@ -419,6 +419,18 @@ margin-top: 60px;
 /* mailform page */
 /* ------------- */
 
+.page-mailFormPage .error {
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #666;
+	position: absolute;
+	width: 51%;
+	padding: 10px 2%;
+	left: 13%;
+	top: 40px;
+}
+
 .page-mailFormPage .container {
 	background: url(../images/background_final.jpg) 0px 0px no-repeat;
 	height: 740px;
