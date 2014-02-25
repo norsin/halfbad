@@ -54,14 +54,17 @@ $(document).ready(function(){
             });
         }
         
-        if(!$(this).hasClass('submitForm')) {
-            checkEmptyAnswers($(this));
-        } else {
-            e.preventDefault();
-            checkEmptyAnswers($(this), true);
-            if(emptyLastQuestion != true) {
-                $('.quizform').submit();
-            }
-        }
+	if(!$(this).hasClass('submitForm')) {
+		checkEmptyAnswers($(this));
+		} else {
+			e.preventDefault();
+			checkEmptyAnswers($(this), true);
+			if(emptyLastQuestion != true) {
+				$('.quizform').submit();
+		}
+	}
+	$('html,body').animate({
+		scrollTop: 0
+	}, 300);
     });
 });
