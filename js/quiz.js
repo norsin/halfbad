@@ -15,7 +15,7 @@ $(document).ready(function(){
         var newboxes = document.getElementsByTagName("div");
         for(var x=0; x<newboxes.length; x++) {
               name = newboxes[x].getAttribute("class");
-              if (name == 'newboxes') {
+              if (name.indexOf('newboxes') > -1){
                     if (newboxes[x].id == thechosenone) {
                           if (newboxes[x].style.display == 'block') {
                                 newboxes[x].style.display = 'none';

@@ -1,6 +1,6 @@
 <div class="contentWrapper sixteen columns quiz">
 <form method="post" action="scorequiz.php" class="quizform">
-      <div class="newboxes" id="newboxes1" style="display: block;">
+      <div class="newboxes greyGradientBg" id="newboxes1" style="display: block;">
             <span class="frage">
                 <p class="intro">Der 15-j&auml;hrige Nathan ist ein Halbcode und gilt als potenziell gef&auml;hrlich und unberechenbar. Auf Beschluss des Rats der Wei&szlig;en Hexen wird er in einem K&auml;fig gefangen gehalten.</p>
                 <p class="question">DU bist dazu bestimmt worden, ihn durch geeignete Ma&szlig;nahmen zu erziehen. Was denkst DU dar&uuml;ber?</p>
@@ -31,7 +31,7 @@
             </span>
             <button class="newboxes2 button submitAnswer"><span class="btnLabel">WEITER</span></button>
       </div>
-      <div class="newboxes" id="newboxes2" style="display: none;">
+      <div class="newboxes greyGradientBg" id="newboxes2" style="display: none;">
             <span class="frage">
                 <p class="intro">Nathan ist aus dem Gef&auml;ngnis geflohen, wo man ihn schwer misshandelt hat. Man wird ihn t&ouml;ten, wenn man ihn findet. Ihm zu helfen, steht unter Strafe.</p>
                 <p class="question">In seiner Verzweiflung wendet er sich aber an DICH. Wirst DU ihm helfen?</p>
@@ -62,7 +62,7 @@
             </span>
             <button class="newboxes3 button submitAnswer"><span class="btnLabel">WEITER</span></button>
       </div>
-      <div class="newboxes" id="newboxes3" style="display: none;">
+      <div class="newboxes greyGradientBg" id="newboxes3" style="display: none;">
             <span class="frage">
                 <p class="intro">Nathan ist auf der Suche nach seinem Vater, einem Schwarzen Hexer. Er will ihn endlich selbst kennenlernen, egal wie b&ouml;se er auch sein mag.</p>
                 <p class="question">Was h&auml;ltst DU von diesem Plan?</p>
@@ -93,7 +93,7 @@
             </span>
             <button class="newboxes4 button submitAnswer"><span class="btnLabel">WEITER</span></button>
       </div>
-      <div class="newboxes" id="newboxes4" style="display: none;">
+      <div class="newboxes greyGradientBg" id="newboxes4" style="display: none;">
             <span class="frage">
                 <p class="intro">Nathan hat sich in eine Wei&szlig;e Hexe verliebt, doch einem Halbcode ist die Freundschaft mit Wei&szlig;en Hexen strikt untersagt.</p>
                 <p class="question">Was r&auml;tst DU ihm?</p>
@@ -124,7 +124,7 @@
             </span>
             <button class="newboxes5 button submitAnswer"><span class="btnLabel">WEITER</span></button>
       </div>
-      <div class="newboxes" id="newboxes5" style="display: none;">
+      <div class="newboxes greyGradientBg" id="newboxes5" style="display: none;">
             <span class="frage">
                 <p class="intro">An seinem 17. Geburtstag erh&auml;lt Nathan bei seiner Schenkungszeremonie drei Gaben und somit die magischen F&auml;higkeiten, die ihn zu einem erwachsenen Hexer machen.</p>
                 <p class="question">Welche magischen F&auml;higkeiten w&uuml;rdest DU DIR selbst w&uuml;nschen, wenn DU an seiner Stelle w&auml;rst?</p>
