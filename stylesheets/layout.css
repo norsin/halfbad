@@ -267,6 +267,8 @@ h2.header {
 
 
 .page-quiz .newboxes .frage .question {
+	text-transform: uppercase;
+	font-weight: normal;
 }
 
 .page-quiz .newboxes .antwort {
