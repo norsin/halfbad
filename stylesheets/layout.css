@@ -579,28 +579,28 @@ margin-top: 60px;
 		}
 		
 		.page-quiz .newboxes .antwort:nth-child(2) .arrowTool {
-			background: url(../images/button_quiz_mobile1.png) 0px 0px no-repeat;
+			background: url(../images/button_mobile01.jpg) 0px 0px no-repeat;
 		}
 
 		.page-quiz .newboxes .antwort:nth-child(3) .arrowTool {
-			background: url(../images/button_quiz_mobile2.png) 0px 0px no-repeat;
+			background: url(../images/button_mobile02.jpg) 0px 0px no-repeat;
 		}
 
 		.page-quiz .newboxes .antwort:nth-child(4) .arrowTool {
-			background: url(../images/button_quiz_mobile3.png) 0px 0px no-repeat;
+			background: url(../images/button_mobile03.jpg) 0px 0px no-repeat;
 		}
 
 
 		.page-quiz .newboxes .antwort:nth-child(2) .radioArrow:checked + label .arrowTool {
-			background: #f90;
+			background: url(../images/button_mobile01.jpg) 0px -79px no-repeat;
 		}
 
 		.page-quiz .newboxes .antwort:nth-child(3) .radioArrow:checked + label .arrowTool {
-			background: #f90;
+			background: url(../images/button_mobile02.jpg) 0px -79px no-repeat;
 		}
 
 		.page-quiz .newboxes .antwort:nth-child(4) .radioArrow:checked + label .arrowTool {
-			background: #f90;
+			background: url(../images/button_mobile03.jpg) 0px -79px no-repeat;
 		}
 
 		.page-win .openContactForm {
@@ -731,28 +731,28 @@ margin-top: 60px;
 		}
 
 		.page-quiz .newboxes .antwort:nth-child(2) .arrowTool {
-			background: url(../images/button_quiz_mobile1_small.png) 0px 0px no-repeat;
+			background: url(../images/button_mobile01_small.jpg) 0px 0px no-repeat;
 		}
 
 		.page-quiz .newboxes .antwort:nth-child(3) .arrowTool {
-			background: url(../images/button_quiz_mobile2_small.png) 0px 0px no-repeat;
+			background: url(../images/button_mobile02_small.jpg) 0px 0px no-repeat;
 		}
 
 		.page-quiz .newboxes .antwort:nth-child(4) .arrowTool {
-			background: url(../images/button_quiz_mobile3_small.png) 0px 0px no-repeat;
+			background: url(../images/button_mobile03_small.jpg) 0px 0px no-repeat;
 		}
 
 
 		.page-quiz .newboxes .antwort:nth-child(2) .radioArrow:checked + label .arrowTool {
-			background: #f90;
+			background: url(../images/button_mobile01_small.jpg) 0px -45px no-repeat;
 		}
 
 		.page-quiz .newboxes .antwort:nth-child(3) .radioArrow:checked + label .arrowTool {
-			background: #f90;
+			background: url(../images/button_mobile02_small.jpg) 0px -45px no-repeat;
 		}
 
 		.page-quiz .newboxes .antwort:nth-child(4) .radioArrow:checked + label .arrowTool {
-			background: #f90;
+			background: url(../images/button_mobile03_small.jpg) 0px -45px no-repeat;
 		}
 
 		.page-win .openMobileContact {
