@@ -1,9 +1,9 @@
 <div class="contentWrapper eight columns offset-by-six">
 	<div class="content">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lorem neque. Morbi sed ullamcorper neque. Quisque consequat tempus lorem eget malesuada. Aliquam in dolor vel odio cursus consectetur id vitae dolor. Sed eget sem at sapien consequat consequat vel a odio. Nullam id porttitor purus.</p>
-		<p><a target="_blank" href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!" target="_top">Send mail!</a></p>
+		<p>Willst Du mehr &uuml;ber den Halbcode Nathan und die Welt der Hexen erfahren? Hier hast Du die Chance, eines von 20 Exemplaren von Sally Greens Roman &raquo;Half Bad &ndash; Das Dunkle in mir&laquo; zu gewinnen. Einsendeschluss ist der 1. Juni 2014.</p>
+		<p><a href="mailto:online@cbt-jugendbuch.de?&subject=Half%20Bad%20Gewinnspiel" target="_top">Schick eine Mail!</a></p>
 		<form class="appNavigator" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-			<button class="button backward eight columns" name="currentPage" value="home"><span class="btnLabel">homepage</span></span>
+			<button class="button backward eight columns" name="currentPage" value="home"><span class="btnLabel">Zur&uuml;ck</span></span>
 		</form>
 	</div>
 </div>
