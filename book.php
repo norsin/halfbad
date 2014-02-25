@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <div class="content sixteen columns">
 	<div class="leftCol five columns offset-by-one">
 		<img src="images/bookCover.png" alt="book cover" class="bookCover">	
