@@ -251,8 +251,6 @@ h2.header {
 .page-quiz .newboxes .frage {
 }
 
-.page-quiz .newboxes .frage .intro {
-}
 
 .page-quiz .newboxes .frage .question {
 }
@@ -552,6 +550,9 @@ margin-top: 60px;
 			font-weight: normal;
 		}
 
+		.page-quiz .newboxes .frage .intro {
+			color: #000;
+		}
 		.page-quiz .newboxes .antwort-text {
 			color: #000;
 			font-weight: normal;
