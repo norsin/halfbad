@@ -83,9 +83,6 @@ if(!isset($_SESSION['currentPage'])) {
                 } else {
                     include "home.php";
                 }?>
-		<div class="footer sixteen columns">
-		footer
-		</div>
 	</div>
 
 

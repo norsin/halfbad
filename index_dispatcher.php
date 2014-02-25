@@ -113,9 +113,6 @@ if(!isset($_SESSION['currentPage'])) {
 				FB.Canvas.setAutoGrow();
 			})
 		</script>
-		<div class="footer sixteen columns">
-		footer
-		</div>
 	</div>
 
 
