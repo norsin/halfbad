@@ -2,13 +2,14 @@
 <div class="content sixteen columns">
 	<div class="leftCol five columns offset-by-one">
 		<img src="images/bookCover.png" alt="book cover" class="bookCover">	
-		<p class="bookDetails">ISBN: xxx-x-xxx-xxxxx-x<br>
-		€17,99 [D] | €18,50 [A] | CHF 25,90*<br>
+		<p class="bookDetails">ISBN: 978-3-570-15842-5<br>
+		&euro;17,99 [D] | &euro;18,50 [A] | CHF 25,90*<br>
 		(* empf. VK-Preis)
 		</p>
 	</div>
 	<div class="rightCol nine columns">
-		<p>Pellentesque sodales ante eu arcu hendrerit fringilla. Nunc quis lorem id libero malesuada mattis sit amet a elit. Vestibulum lectus diam, vulputate ac erat vel, sodales sagittis tellus. Proin at enim leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id nibh eu ipsum placerat consequat. Fusce sollicitudin, lacus eu fermentum fringilla, orci sapien pellentesque risus, vel interdum enim tortor vitae justo. Cras placerat accumsan pretium. Mauris ligula dolor, malesuada sed mi id, egestas eleifend libero. Praesent non lectus ac quam pharetra auctor eget quis nunc. Morbi pretium ipsum lectus, et ultrices est vestibulum non. Mauris viverra laoreet turpis euismod tristique. Donec non volutpat sapien, quis lobortis erat.</p>
+		<p>Seit seiner Kindheit wird Nathan von der Regierung beobachtet, verfolgt, eingesperrt. Seine Welt wird von Wei&szlig;en Hexen regiert, w&auml;hrend die Schwarzen Hexen im Untergrund leben. Nathan ist beides &ndash; denn seine Mutter war wei&szlig; und sein Vater Marcus ist der gef&uuml;rchtetste Schwarze Hexer aller Zeiten.</p>
+		<p>Um an Marcus heranzukommen, stellt der Rat der Wei&szlig;en Hexen eine t&ouml;dliche Falle &ndash; mit Nathan als K&ouml;der. Nathan bricht aus, doch schon bald wird er von beiden Seiten gejagt. Er muss sich entscheiden, wof&uuml;r es sich zu k&auml;mpfen lohnt.</p>	
 	</div>
 	<form class="appNavigator" method="post" action="index.php">
 		<?php if(isset($_POST['backTo'])) {
@@ -17,9 +18,9 @@
 		    $backTo = "home";
 		}
 		?>
-		<a href="#" target="_blank" class="button zumTrailer"><span class="btnLabel">zum Trailer</span></a>
+		<a href="#" target="_blank" class="button zumTrailer"><span class="btnLabel">Zum Trailer</span></a>
 		<a href="#" target="_blank" class="button leseproben"><span class="btnLabel">Leseproben</span></a>
-		<a href="#" target="_blank" class="button kaufen"><span class="btnLabel">Kaufen</span></a>
+		<a href="http://www.randomhouse.de/Buch/HALF-BAD-Das-Dunkle-in-mir-Band-1/Sally-Green/e448547.rhd" target="_blank" class="button kaufen"><span class="btnLabel">Kaufen</span></a>
 		<button class="button backToHome" name="currentPage" value="<?php echo $backTo?>"><span class="btnLabel">Zur&uuml;ck</span></button>
 	</form>
 </div>

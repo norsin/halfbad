@@ -16,10 +16,10 @@ $excludeFromMessage = "regFormSubmit"; // names of the fields you want to exclud
 $emailSubject = "Half Bad"; 
 
 // the generated email will start with this text
-$emailIntro = "Took part into Half Bad: \n\n"; 
+$emailIntro = "Nimm teil am Half Bad-Gewinnspiel: \n\n"; 
 
 // message to display if the user misses mandatory fields
-$pleaseFill = "Bitte fülle alle Felder aus und sende das Formular erneut ab."; 
+$pleaseFill = "Bitte f&uuml;lle alle Felder aus und sende das Formular erneut ab."; 
 
 // message to display if the user inputs invalid values in the name field
 $emptyNameField = "Das Namensfeld darf keine Sonderzeichen enthalten.\r\n"; 
@@ -28,10 +28,10 @@ $emptyNameField = "Das Namensfeld darf keine Sonderzeichen enthalten.\r\n";
 $thankyouMessage = 'Danke f&uuml;r deine Teilnahme an unserem Gewinnspiel!';
 
 // message to display if user inputs invalid email
-$invalidEmail = "Die Emailadrese ist ungültig.\r\n";
+$invalidEmail = "Die E-Mail-Adresse ist ung&uuml;ltig.\r\n";
 
 // message to display if age verification is not passed
-$noAgeVerification = "Du musst bitte bestätigen, dass du 18 Jahre alt bist.";
+$noAgeVerification = "Du musst bitte best&auml;tigen, dass du 18 Jahre alt bist.";
 
 // message to display if any problem occurs
 $genericProblem = 'Ups, ein Fehler ist aufgetreten...';
@@ -179,7 +179,7 @@ function get_data($var) {
     
     <form class="registerForm twelve columns offset-by-two" <?php if (isset($disable) && $disable === true) echo ' style="display: none;"'; ?> method="post" action="<?php echo $_SERVER['PHP_SELF'] ;?>">
         <div class="textBlock">
-		<p>This is an introductory text to be eventually expanded...</p>
+		<p>Willst Du mehr &uuml;ber den Halbcode Nathan und die Welt der Hexen erfahren? Hier hast Du die Chance, eines von 20 Exemplaren von Sally Greens Roman &raquo;Half Bad &ndash; Das Dunkle in mir&laquo; zu gewinnen. Einsendeschluss ist der 1. Juni 2014.</p>
 	</div>
 
 
@@ -201,7 +201,7 @@ function get_data($var) {
                
                 <span class="ageVerification" style="font-size:11px;">
                     <input type="checkbox" name="age_verification" value="verified" style="margin-top:8px; width: 15px;" <?php if(!empty($_POST['age_verification'])) { echo 'checked' ;} ?>/>
-                    <span style="text-decoration: underline">Ich bin unter 18 Jahre alt.</span> Das Einverständnis meiner Eltern zur Teilnahme an dieser Gewinnspielaktion habe ich eingeholt
+                    <span style="text-decoration: underline">Ich bin unter 18 Jahre alt.</span> Das Einverst&auml;ndnis meiner Eltern zur Teilnahme an dieser Gewinnspielaktion habe ich eingeholt.
                 </span>
         </p>
         <p class="sendBtns">

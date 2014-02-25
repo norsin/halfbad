@@ -2,14 +2,14 @@
 <form method="post" action="scorequiz.php" class="quizform">
       <div class="newboxes" id="newboxes1" style="display: block;">
             <span class="frage">
-                <p class="intro">FRAGE 1: <span class="emphasis">„Fuß in die Tür“-Effekt</span></p>
-                <p class="question">Du  musst bis heute Abend noch eine Präsentation fertigstellen, hast aber ein Date und möchtest deshalb früher gehen. Wie bringst du den neuen Kollegen dazu, deine Arbeit zu übernehmen?</p>
+                <p class="intro">Der 15-j&auml;hrige Nathan ist ein Halbcode und gilt als potenziell gef&auml;hrlich und unberechenbar. Auf Beschluss des Rats der Wei&szlig;en Hexen wird er in einem K&auml;fig gefangen gehalten.</p>
+                <p class="question">DU bist dazu bestimmt worden, ihn durch geeignete Ma&szlig;nahmen zu erziehen. Was denkst DU dar&uuml;ber?</p>
             </span>
             <span class="antwort threeCol">
                   <input type="radio" name="a" value="profile-1" class="radioArrow" id="antwort-a-1">
                   <label for="antwort-a-1">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Ich bitte ihn zuerst, mir bei einer kleinen Aufgabe behilflich zu sein und bedanke mich überschwänglich. Zwei Stunden später frage ich ihn, ob er meine Präsentation machen kann. Das klappt!</span>
+                        <span class="antwort-text">Ich freue mich, dass die Wahl auf mich gefallen ist. Man h&auml;lt mich also f&uuml;r kompetent und zuverl&auml;ssig. </span>
                   </label>
                   
             </span>
@@ -17,7 +17,7 @@
                   <input type="radio" name="a" value="profile-2" class="radioArrow" id="antwort-a-2">
                   <label for="antwort-a-2">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Welche Präsentation? Ich habe keine E-Mail mit dem Auftrag bekommen!</span>
+                        <span class="antwort-text">Gef&auml;hrlich und unberechenbar? Mal sehen, was ihn aus der Ruhe bringen kann.</span>
                   </label>
                   
             </span>
@@ -25,7 +25,7 @@
                   <input type="radio" name="a" value="profile-3" class="radioArrow" id="antwort-a-3">
                   <label for="antwort-a-3">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Ich trete mit durchgedrückter Brust an seinen Schreibtisch und überzeuge ihn, unser Chef hätte ihm die Aufgabe übertragen. Zurück an meinen Platz freue ich mich heimlich über meinen gelungenen Plan.</span>
+                        <span class="antwort-text">Ich lehne diese Aufgabe ab. Niemand sollte unschuldig und auf blo&szlig;en Verdacht hin seiner Freiheit beraubt werden!</span>
                   </label>
                   
             </span>
@@ -33,22 +33,22 @@
       </div>
       <div class="newboxes" id="newboxes2" style="display: none;">
             <span class="frage">
-                <p class="intro">FRAGE 2: <span class="emphasis">Selbstwahrnehmung</span></p>
-                <p class="question">Du wünschst dir nichts sehnlicher als eine Katze! Allerdings weißt du nicht, ob dein Partner, mit dem du die Wohnung teilst, das auch möchte. Wie gehst du vor?</p>
+                <p class="intro">Nathan ist aus dem Gef&auml;ngnis geflohen, wo man ihn schwer misshandelt hat. Man wird ihn t&ouml;ten, wenn man ihn findet. Ihm zu helfen, steht unter Strafe.</p>
+                <p class="question">In seiner Verzweiflung wendet er sich aber an DICH. Wirst DU ihm helfen?</p>
             </span>
             <span class="antwort threeCol">
-                  <input type="radio" name="b" value="profile-1" class="radioArrow" id="antwort-b-1">
+                  <input type="radio" name="b" value="profile-2" class="radioArrow" id="antwort-b-1">
                   <label for="antwort-b-1">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Ich verabrede einen Besuch bei meiner katzenliebenden Freundin. Wenn er gleich mit den kleinen Rackern zu spielen beginnt, frage ich ihn, ob er sich das auch für uns vorstellen könnte.</span>
+                        <span class="antwort-text">Er kommt auch ohne mich klar, soviel steht fest. Allzu leicht sollte man es ihm nicht machen.</span>
                   </label>
                   
             </span>
             <span class="antwort threeCol">
-                  <input type="radio" name="b" value="profile-2" class="radioArrow" id="antwort-b-2">
+                  <input type="radio" name="b" value="profile-1" class="radioArrow" id="antwort-b-2">
                   <label for="antwort-b-2">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Er liebt Tiere, das weiß ich! Ich suche einfach gleich zwei aus, dann hat jeder von uns eine eigene!</span>
+                        <span class="antwort-text">Nat&uuml;rlich nicht. Er muss so schnell wie m&ouml;glich wieder hinter Schloss und Riegel, denn er ist gef&auml;hrlich!</span>
                   </label>
                   
             </span>
@@ -56,7 +56,7 @@
                   <input type="radio" name="b" value="profile-3" class="radioArrow" id="antwort-b-3">
                   <label for="antwort-b-3">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Ich schenke ihm eine Tasse mit einem Katzenmotiv und zwinge ihn dazu, sie jeden Morgen zu benutzen. Nach einem Monat frage ich ihn, ob er nicht doch lieber eine echte Katze möchte.</span>
+                        <span class="antwort-text">Ich begleite ihn zu einem Bekannten, der ihm beim Untertauchen helfen kann.</span>
                   </label>
                   
             </span>
@@ -64,14 +64,14 @@
       </div>
       <div class="newboxes" id="newboxes3" style="display: none;">
             <span class="frage">
-                <p class="intro">FRAGE 3: <span class="emphasis">Zwei-Faktoren-Theorie</span></p>
-                <p class="question">Deine äußerst attraktive Nachbarin hat dich auf einen Kaffee eingeladen.  Während des Treffens läuft dein Puls auf Hochtouren! Oder liegt es an der Spinne, die über ihren Teller läuft?</p>
+                <p class="intro">Nathan ist auf der Suche nach seinem Vater, einem Schwarzen Hexer. Er will ihn endlich selbst kennenlernen, egal wie b&ouml;se er auch sein mag.</p>
+                <p class="question">Was h&auml;ltst DU von diesem Plan?</p>
             </span>
             <span class="antwort threeCol">
-                  <input type="radio" name="c" value="profile-1" class="radioArrow" id="antwort-c-1">
+                  <input type="radio" name="c" value="profile-3" class="radioArrow" id="antwort-c-1">
                   <label for="antwort-c-1">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Habe ich eine Spinnenphobie oder sind es tatsächlich Schmetterlinge im Bauch? Ich frage sie gleich nach einem zweiten Treffen zu einem Kinobesuch – ohne Spannung, ganz langweilig. Mal sehen, ob das Herzrasen wiederkommt!</span>
+                        <span class="antwort-text">Egal, was in der Vergangenheit passiert ist: Er ist und bleibt sein Vater. Nat&uuml;rlich will er ihn kennenlernen.</span>
                   </label>
                   
             </span>
@@ -79,15 +79,15 @@
                   <input type="radio" name="c" value="profile-2" class="radioArrow" id="antwort-c-2">
                   <label for="antwort-c-2">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Ich mache sie panisch auf die Spinne aufmerksam und flehe sie an, diese zu entfernen. Damit ist die Situation vollkommen ruiniert und ich werde auf ewig der spinnenphobische Nachbar bleiben.</span>
+                        <span class="antwort-text">Endlich erkennt er seine wahre Bestimmung und steht mutig zu seiner Entscheidung!</span>
                   </label>
                   
             </span>
             <span class="antwort threeCol">
-                  <input type="radio" name="c" value="profile-3" class="radioArrow" id="antwort-c-3">
+                  <input type="radio" name="c" value="profile-1" class="radioArrow" id="antwort-c-3">
                   <label for="antwort-c-3">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Die Spinne muss weg! Ich bin ja total abgelenkt und kann mich überhaupt nicht mehr auf das Gespräch konzentrieren. So kann ich ihr gleich mit einer Heldentat imponieren!</span>
+                        <span class="antwort-text">Seine Abstammung musste sich ja durchsetzen. Halbcodes k&ouml;nnen nur b&ouml;se sein. Das habe ich schon an seinen Augen gesehen.</span>
                   </label>
                   
             </span>
@@ -95,30 +95,30 @@
       </div>
       <div class="newboxes" id="newboxes4" style="display: none;">
             <span class="frage">
-                <p class="intro">FRAGE 4: <span class="emphasis">Unterlassungsirrtum</span></p>
-                <p class="question">Soll ich’s wirklich machen, oder lass ich’s lieber sein? Jein? –Wie gehst du in schwierigen Situationen vor, um deine richtige Entscheidung zu treffen?</p>
+                <p class="intro">Nathan hat sich in eine Wei&szlig;e Hexe verliebt, doch einem Halbcode ist die Freundschaft mit Wei&szlig;en Hexen strikt untersagt.</p>
+                <p class="question">Was r&auml;tst DU ihm?</p>
             </span>
             <span class="antwort threeCol">
-                  <input type="radio" name="d" value="profile-1" class="radioArrow" id="antwort-d-1">
+                  <input type="radio" name="d" value="profile-2" class="radioArrow" id="antwort-d-1">
                   <label for="antwort-d-1">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Die klassische Pro und Contra Liste! Ich merke meist schon beim Aufschreiben, zu welcher Seite ich tendiere.</span>
+                        <span class="antwort-text">Was gibt es da zu &uuml;berlegen? Du bist, wer Du bist und hast Dich vor niemandem zu rechtfertigen!</span>
                   </label>
                   
             </span>
             <span class="antwort threeCol">
-                  <input type="radio" name="d" value="profile-2" class="radioArrow" id="antwort-d-2">
+                  <input type="radio" name="d" value="profile-3" class="radioArrow" id="antwort-d-2">
                   <label for="antwort-d-2">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Ich bespreche meine Pläne erst einmal mit der Grand-Jury, bestehend aus meinen besten Freunden. Die wissen schon, was gut für mich ist.</span>
+                        <span class="antwort-text">Liebe l&auml;sst sich nicht verbieten! Folge Deinem Gef&uuml;hl, aber bleib wachsam!</span>
                   </label>
                   
             </span>
             <span class="antwort threeCol">
-                  <input type="radio" name="d" value="profile-3" class="radioArrow" id="antwort-d-3">
+                  <input type="radio" name="d" value="profile-1" class="radioArrow" id="antwort-d-3">
                   <label for="antwort-d-3">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Auf zu neuen Ufern! Wenn ich nicht weiß was ich machen soll, entscheide ich, was mich mehr fordert. Wie ich das Ganze dann meistere, überlege ich mir auf dem Weg!</span>
+                        <span class="antwort-text">Lass die Finger von ihr! Sie hat Besseres verdient als einen Abschaum wie Dich!</span>
                   </label>
                   
             </span>
@@ -126,30 +126,30 @@
       </div>
       <div class="newboxes" id="newboxes5" style="display: none;">
             <span class="frage">
-                <p class="intro">FRAGE 5: <span class="emphasis">Zero Risk Bias</span></p>
-                <p class="question">In der Sportmannschaft deines Freundes sind zwei neue Singlefrauen eingetreten, mit denen er sich ausgezeichnet versteht. Vielleicht zu gut? Was tust du, um die Situation zu entschärfen?</p>
+                <p class="intro">An seinem 17. Geburtstag erh&auml;lt Nathan bei seiner Schenkungszeremonie drei Gaben und somit die magischen F&auml;higkeiten, die ihn zu einem erwachsenen Hexer machen.</p>
+                <p class="question">Welche magischen F&auml;higkeiten w&uuml;rdest DU DIR selbst w&uuml;nschen, wenn DU an seiner Stelle w&auml;rst?</p>
             </span>
             <span class="antwort threeCol">
                   <input type="radio" name="e" value="profile-1" class="radioArrow" id="antwort-e-1">
                   <label for="antwort-e-1">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Ich lade die beiden Mädels zu einem Spieleabend zu uns ein, der sich als Blind Date mit unserer Nachbar-WG entpuppt! Manchmal muss man der Liebe eben auf die Sprünge helfen.</span>
+                        <span class="antwort-text">Die F&auml;higkeit, jede Wunde und jede Krankheit zu heilen.</span>
                   </label>
                   
             </span>
             <span class="antwort threeCol">
-                  <input type="radio" name="e" value="profile-2" class="radioArrow" id="antwort-e-2">
+                  <input type="radio" name="e" value="profile-3" class="radioArrow" id="antwort-e-2">
                   <label for="antwort-e-2">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Im Nachbarverein herrscht akuter Frauenmangel! Ich mache die Kollegen auf die beiden Damen aufmerksam und versuche wenigstens eine der beiden dort unterzubringen.</span>
+                        <span class="antwort-text">Die F&auml;higkeit, mich in bestimmten Situationen in Nebel aufzul&ouml;sen.</span>
                   </label>
                   
             </span>
             <span class="antwort threeCol">
-                  <input type="radio" name="e" value="profile-3" class="radioArrow" id="antwort-e-3">
+                  <input type="radio" name="e" value="profile-2" class="radioArrow" id="antwort-e-3">
                   <label for="antwort-e-3">
                         <span class="arrowTool"></span>
-                        <span class="antwort-text">Mit dem Sport ist es für ihn dann wohl vorbei! Ich versuche ihn davon zu überzeugen mehr mit mir zu unternehmen.</span>
+                        <span class="antwort-text">Die F&auml;higkeit, meine Feinde bewegungsunf&auml;hig zu machen.</span>
                   </label>
                   
             </span>

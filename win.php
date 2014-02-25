@@ -4,27 +4,27 @@
 	<?php
 	    $resultCharacters = array(
 		"profile-1" => array(
-			"Zuordnung 1" => "Lorem ipsum dolor sit amet",
+			"Zuordnung 1" => "Gemeinschaft der WEISSEN HEXEN",
 			"Geburtscode 1" => "W1 / S0",
-			"Besondere EigenSchaften 1" => "Duis vel ipsum luctus, tristique leo id, auctor purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam velit elit, sollicitudin nec consequat volutpat, eleifend sit amet lorem.",
-			"Auff&auml;lligkeiten 1" => "Proin tortor ipsum, pretium vel dui id, vehicula imperdiet nisl.",
-			"Anmerkungen 1" => "Praesent sit amet est a elit mollis venenatis vitae sed metus."	
+			"Besondere EigenSchaften 1" => "sensibel, geradlinig, offen, verl&auml;sslich, macht f&uuml;r gute Freunde selbst das Unm&ouml;gliche m&ouml;glich",
+			"Auff&auml;lligkeiten 1" => "hat einen Hang zur &uuml;berheblichen Besserwisserei, bevormundet gerne die anderen",
+			"Anmerkungen 1" => "Auch wenn Du es ja nur gut meinst &ndash; wei&szlig;t Du wirklich immer, was das Beste f&uuml;r andere ist?"	
 		),
 
 		"profile-2" => array(
-			"Zuordnung 2" => "Lorem ipsum dolor sit amet",
-			"Geburtscode 2" => "W1 / S0",
-			"Besondere EigenSchaften 2" => "Duis vel ipsum luctus, tristique leo id, auctor purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam velit elit, sollicitudin nec consequat volutpat, eleifend sit amet lorem.",
-			"Auff&auml;lligkeiten 2" => "Proin tortor ipsum, pretium vel dui id, vehicula imperdiet nisl.",
-			"Anmerkungen 2" => "Praesent sit amet est a elit mollis venenatis vitae sed metus."	
+			"Zuordnung 2" => "Gemeinschaft der SCHWARZEN HEXEN",
+			"Geburtscode 2" => "W0 / S1",
+			"Besondere EigenSchaften 2" => "intelligent, freiheitsliebend, willensstark, l&auml;sst sich in widrigen Situationen von nichts und niemandem unterkriegen",
+			"Auff&auml;lligkeiten 2" => "verl&auml;sst sich am liebsten auf sich selbst, geht unbeirrbar den eigenen Weg, eher ein Einzelg&auml;nger",
+			"Anmerkungen 2" => "Wem willst Du eigentlich etwas beweisen? Dir selbst? Schw&auml;chen einzugestehen k&ouml;nnte Dir neue Freundschaften einbringen."	
 		),
 
 		"profile-3" => array(
-			"Zuordnung 3" => "Lorem ipsum dolor sit amet",
-			"Geburtscode 3" => "W1 / S0",
-			"Besondere EigenSchaften 3" => "Duis vel ipsum luctus, tristique leo id, auctor purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam velit elit, sollicitudin nec consequat volutpat, eleifend sit amet lorem.",
-			"Auff&auml;lligkeiten 3" => "Proin tortor ipsum, pretium vel dui id, vehicula imperdiet nisl.",
-			"Anmerkungen 3" => "Praesent sit amet est a elit mollis venenatis vitae sed metus."	
+			"Zuordnung 3" => "HALBCODE",
+			"Geburtscode 3" => "W0,5 / S0,5",
+			"Besondere EigenSchaften 3" => "wacher Verstand, selbstkritisch, mitf&uuml;hlend, st&auml;ndig in Sorge, dass man sich einen falschen Eindruck von ihm verschafft",
+			"Auff&auml;lligkeiten 3" => "&auml;ndert h&auml;ufig seinen Standpunkt, will sich nicht festlegen, wei&szlig; h&auml;ufig nicht genau, was richtig oder falsch ist",
+			"Anmerkungen 3" => "Eigentlich bewunderst Du insgeheim alle, die unersch&uuml;tterlich an ihrer Meinung festhalten. Das musst Du wirklich nicht! Du bist v&ouml;llig okay, so wie Du bist. Du bist ein Halbcode und wirst Deinen eigenen Weg finden."	
 		),
 	    )
 	?>
@@ -42,7 +42,7 @@
 	</dl>
 	<form class="appNavigator" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <input type="hidden" name="backTo" value="win" />
-	    <button name="currentPage" value="book" class="button bookBtn forward zumBuch"><span class="btnLabel">zum Buch</span></button>
+	    <button name="currentPage" value="book" class="button bookBtn forward zumBuch"><span class="btnLabel">Zum Buch</span></button>
 	    <button name="currentPage" value="mailFormPage" class="button forward openContactForm gewinnSpiel"><span class="btnLabel">Gewinnspiel</span></button>
 	    <button name="currentPage" value="contactPage" class="button forward openMobileContact"><span class="btnLabel">Gewinnspiel</span></button>
 	</form>

@@ -24,14 +24,14 @@ if(!isset($_SESSION['currentPage'])) {
 	<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>CBT - Half Bad</title>
-        <meta name="description" content="description text" />
+        <meta name="description" content="Stell Dir vor, Du lebst in einer Welt, in der Hexer und Hexen mit außergewöhnlichen magischen Fähigkeiten allgegenwärtig sind. Mach mit und stell Dich Deiner dunklen Seite! Unterziehe Dich dem Persönlichkeitstest, nimm an der Verlosung teil und gewinne eines von 20 Exemplaren von Sally Greens Roman „Half Bad – Das Dunkle in mir“!" />
         <meta property="og:image" content="http://f-bilandia.de/cbt/halfbad/images/share.png"/>
         <meta property="og:image:secure_url" content="https://f-bilandia.de/cbt/halfbad/images/share.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="200">
         <meta property="og:image:height" content="200">
-        <meta property="og:title" content="title text"/>
-        <meta property="og:description" content="description text" />
+        <meta property="og:title" content="CBT - Half Bad"/>
+        <meta property="og:description" content="Stell Dir vor, Du lebst in einer Welt, in der Hexer und Hexen mit außergewöhnlichen magischen Fähigkeiten allgegenwärtig sind. Mach mit und stell Dich Deiner dunklen Seite! Unterziehe Dich dem Persönlichkeitstest, nimm an der Verlosung teil und gewinne eines von 20 Exemplaren von Sally Greens Roman „Half Bad – Das Dunkle in mir“!" />
         <meta property="og:url" content="http://f-bilandia.de/cbt/halfbad/index.php"/>
 	<meta name="author" content="">
 
