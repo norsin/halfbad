@@ -1,4 +1,5 @@
 <?php
+session_start();
 // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
 $yourEmail = "giovanni.canzio@gmail.com"; // the email address you wish to receive these mails through
@@ -203,7 +204,14 @@ function get_data($var) {
                     <span style="text-decoration: underline">Ich bin unter 18 Jahre alt.</span> Das Einverständnis meiner Eltern zur Teilnahme an dieser Gewinnspielaktion habe ich eingeholt
                 </span>
         </p>
-        <p>
+        <p class="sendBtns">
+		<?php if(isset($_POST['backTo'])) {
+		    $backTo = $_POST['backTo'];
+		} else {
+		    $backTo = "home";
+		}
+		?>
+		<button class="button backToHome" name="currentPage" value="<?php echo $backTo?>"><span class="btnLabel">Zur&uuml;ck</span></button>
                 <input type="submit" name="regFormSubmit" id="regFormSubmit" value="Senden" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?> />
         </p>
 

@@ -450,6 +450,18 @@ margin-top: 60px;
 	border: none;
 }
 
+.page-mailFormPage .registerForm .backToHome {
+	width: 240px;
+	height: 60px;
+	background: url(../images/button_zurueck.png) 0px 0px no-repeat;
+	margin-top: -30px;
+}
+
+
+.page-mailFormPage .registerForm .backToHome:hover {
+	background: url(../images/button_zurueck.png) 0px -56px no-repeat;	
+}
+
 /* #Media Queries
 ================================================== */
 	/* Smaller than standard 960 (devices and browsers) */
