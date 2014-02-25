@@ -31,22 +31,37 @@ $(document).ready(function(){
     }
     
     $('.submitAnswer').click(function(e){
-        if(!$(this).hasClass('submitForm')) {
-            e.preventDefault();
-            var emptyAnswer = 0;
-            $(this).parent().children('.antwort').each(function(){
+        e.preventDefault();
+        var emptyAnswer = 0;       
+        var emptyLastQuestion = false;
+        function checkEmptyAnswers(elem, finalQuestion) {
+
+            elem.parent().children('.antwort').each(function(){
                 if($(this).children('input').attr('checked')) {
                     showonlyone($(this).parent().children('.submitAnswer').attr('class').split(' ')[0]);
                     return false;
                 } else {
                     if(emptyAnswer == ($(this).parent().children('.antwort').length) - 1) {
-                        alert('please select an answer');
+                        alert('Wähle eine Antwort aus!');
+                        if(finalQuestion) {
+                            emptyLastQuestion = true;
+                        }
                     } else {
                         emptyAnswer = emptyAnswer + 1;
                     }
 
                 }
             });
+        }
+        
+        if(!$(this).hasClass('submitForm')) {
+            checkEmptyAnswers($(this));
+        } else {
+            e.preventDefault();
+            checkEmptyAnswers($(this), true);
+            if(emptyLastQuestion != true) {
+                $('.quizform').submit();
+            }
         }
     });
 });
