@@ -36,36 +36,6 @@
 	display: none;
 }
 
-.modalWindow {
-	display: none;
-	background: rgba(0,0,0,0.8);
-	position: absolute;
-	width: 86%;
-	margin: 10px 5%;
-	padding: 10px 2%;
-	min-height: 95%;
-	border-radius: 10px;
-	box-shadow: 1px 0px 10px #666;
-	color: #eee;
-	font-size: 0.9em;
-}
-
-.modalWindow a:link,
-.modalWindow a:visited {
-	color: #eee;
-}
-
-.modalWindow .close {
-	display: block;
-	background: #eee;
-	color: #333;
-	width: auto;
-	float: right;
-	clear: both;
-	border-radius: 5px;
-	padding: 3px 5px;
-	cursor: pointer;
-}
 
 .fangate {
 	background: url(../images/fangate.jpg) 0px 0px no-repeat;
@@ -535,6 +505,16 @@ margin-top: 60px;
 	/* mobile landscape size to tablet portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 
+		.greyGradientBg {
+			background: #9b9a98 !important;
+			background: -moz-linear-gradient(top, #9b9a98 0%, #c1bfc0 100%) !important;
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b9a98), color-stop(100%,#c1bfc0)) !important;
+			background: -webkit-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
+			background: -o-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
+			background: -ms-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
+			background: linear-gradient(to bottom, #9b9a98 0%,#c1bfc0 100%) !important;
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9a98', endColorstr='#c1bfc0',GradientType=0 ) !important;
+		}
 		.contentWrapper {
 			width: 340px !important;
 			margin: 0px 40px !important;
@@ -570,16 +550,7 @@ margin-top: 60px;
 	
 		.container,
 		.page-quiz .newboxes {
-			background: #9b9a98 !important; /* Old browsers */
-			background: -moz-linear-gradient(top,  #9b9a98 0%, #c1bfc0 100%) !important; /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b9a98), color-stop(100%,#c1bfc0)) !important; /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* IE10+ */
-			background: linear-gradient(to bottom,  #9b9a98 0%,#c1bfc0 100%) !important; /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9a98', endColorstr='#c1bfc0',GradientType=0 ) !important; /* IE6-9 */
 			height: auto;
-			color: #000;
 			padding-top: 20px;
 			font-weight: normal;
 		}
@@ -680,6 +651,17 @@ margin-top: 60px;
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 
+		.greyGradientBg {
+			background: #9b9a98 !important;
+			background: -moz-linear-gradient(top, #9b9a98 0%, #c1bfc0 100%) !important;
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b9a98), color-stop(100%,#c1bfc0)) !important;
+			background: -webkit-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
+			background: -o-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
+			background: -ms-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
+			background: linear-gradient(to bottom, #9b9a98 0%,#c1bfc0 100%) !important;
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9a98', endColorstr='#c1bfc0',GradientType=0 ) !important;
+		}
+
 		.contentWrapper {
 			font-size: 0.9em !important;
 		}
@@ -723,14 +705,6 @@ margin-top: 60px;
 			width: 100% !important;
 			margin: 0 !important;
 			padding: 10px 0px 0px 0px !important;
-			background: #9b9a98 !important;
-			background: -moz-linear-gradient(top, #9b9a98 0%, #c1bfc0 100%) !important;
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b9a98), color-stop(100%,#c1bfc0)) !important;
-			background: -webkit-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
-			background: -o-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
-			background: -ms-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
-			background: linear-gradient(to bottom, #9b9a98 0%,#c1bfc0 100%) !important;
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9a98', endColorstr='#c1bfc0',GradientType=0 ) !important;
 		} 
 		.content {
 			width: 90%;
@@ -741,14 +715,6 @@ margin-top: 60px;
 			height: auto !important;
 			padding: 10px 5%;
 			margin: 0;
-			background: #9b9a98 !important; /* Old browsers */
-			background: -moz-linear-gradient(top,  #9b9a98 0%, #c1bfc0 100%) !important; /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b9a98), color-stop(100%,#c1bfc0)) !important; /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  #9b9a98 0%,#c1bfc0 100%) !important; /* IE10+ */
-			background: linear-gradient(to bottom,  #9b9a98 0%,#c1bfc0 100%) !important; /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9a98', endColorstr='#c1bfc0',GradientType=0 ) !important; /* IE6-9 */
 			color: #000;
 			font-weight: normal;
 			font-size: 1.1em;
@@ -804,14 +770,6 @@ margin-top: 60px;
 		}
 
 		.page-win .container {
-			background: #9b9a98 !important;
-			background: -moz-linear-gradient(top, #9b9a98 0%, #c1bfc0 100%) !important;
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b9a98), color-stop(100%,#c1bfc0)) !important;
-			background: -webkit-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
-			background: -o-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
-			background: -ms-linear-gradient(top, #9b9a98 0%,#c1bfc0 100%) !important;
-			background: linear-gradient(to bottom, #9b9a98 0%,#c1bfc0 100%) !important;
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9a98', endColorstr='#c1bfc0',GradientType=0 ) !important;
 		}
 
 		.page-win .openMobileContact {

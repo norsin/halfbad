@@ -94,7 +94,7 @@ if(!isset($_SESSION['currentPage'])) {
 <!-- Primary Page Layout
 ================================================== -->
 
-	<div class="container">
+	<div class="container greyGradientBg">
 		<div class="heading eight offset-by-six">
 			<img src="images/homeTitle.png" class="headerImg" alt="Schwarz oder Weiss - auf welcher Seite stehst du?" />
 			<h1 class="header"><span class="schwarz">Schwarz</span> <span class="oder">oder</span> <span class="weiss">Weiss</span></h1>
