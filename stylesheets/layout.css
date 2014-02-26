@@ -426,8 +426,13 @@ margin-top: 60px;
 	width: 80%;	
 }
 
+.page-mailFormPage .registerForm label {
+	font-size: 12px;
+} 
+
 .page-mailFormPage .registerForm input  {
 	width: 100%;
+	margin-bottom: 10px;
 }
 
 .page-mailFormPage .registerForm #regFormSubmit {
@@ -441,6 +446,12 @@ margin-top: 60px;
 	padding: 10px 0px !important;
 	border-radius: 5px;
 	border: none;
+}
+
+.page-mailFormPage .registerForm .sendBtns {
+	width: 100%;
+	float: left;
+	margin-top: 10px;
 }
 
 .page-mailFormPage .registerForm .backToHome {

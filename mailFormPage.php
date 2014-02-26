@@ -187,22 +187,22 @@ function get_data($var) {
         </noscript>
         <p>
 
-        		<label for="name">Bist Du laut der Auswertung eher ein Schwarzer oder Wei&szlig;er Hexer oder ein Halbcode? *</label> 
-                        <input type="text" name="gewinnspielfrage" id="name" value="<?php get_data("name"); ?>" /><br />
+		<label for="auswertung">Bist Du laut der Auswertung eher ein Schwarzer oder Wei&szlig;er Hexer oder ein Halbcode? *</label> 
+			<input type="text" name="gewinnspielfrage" id="auswertung" value="<?php get_data("auswertung"); ?>" />
 
                 <label for="name">Vor- und Nachname: *</label> 
-                        <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" /><br />
+                        <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" />
 
                 <label for="address">Stra&szlig;e und Hausnummer: *</label> 
-                        <input type="text" name="address" id="address" value="<?php get_data("address"); ?>" /><br />
+                        <input type="text" name="address" id="address" value="<?php get_data("address"); ?>" />
 
                 <label for="cityZip">PLZ und Ort: *</label> 
-                        <input type="text" name="cityZip" id="cityZip" value="<?php get_data("cityZip"); ?>" /><br />
+                        <input type="text" name="cityZip" id="cityZip" value="<?php get_data("cityZip"); ?>" />
 
                 <label for="email">Mailadresse: *</label>
-                        <input type="text" name="email" id="email" value="<?php get_data("email"); ?>" /><br />
+                        <input type="text" name="email" id="email" value="<?php get_data("email"); ?>" />
                
-                <span class="ageVerification" style="font-size:11px;">
+                <span class="ageVerification" style="font-size:10px;">
                     <input type="checkbox" name="age_verification" value="verified" style="margin-top:8px; width: 15px;" <?php if(!empty($_POST['age_verification'])) { echo 'checked' ;} ?>/>
                     <span style="text-decoration: underline">Ich bin unter 18 Jahre alt.</span> Das Einverst&auml;ndnis meiner Eltern zur Teilnahme an dieser Gewinnspielaktion habe ich eingeholt.
                 </span>
