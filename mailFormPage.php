@@ -1,5 +1,4 @@
 <?php
-session_start();
 // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
 $yourEmail = "giovanni.canzio@gmail.com"; // the email address you wish to receive these mails through
