@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <div class="contentWrapper fourteen columns offset-by-one win resultProfile">
 	<img src="images/homeTitle.png" class="headerImg" alt="Schwarz oder Weiss - auf welcher Seite stehst du?" />
 	<?php
