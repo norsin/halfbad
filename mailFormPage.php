@@ -94,7 +94,7 @@ if (($_SERVER['REQUEST_METHOD'] == "POST") && (isset($_REQUEST['regFormSubmit'])
 			$error_msg[] = $pleaseFill;
 	}
 
-	if (!empty($_POST['name']) && !preg_match("/^[a-zA-Z-'\s]*$/", stripslashes($_POST['name'])))
+	if (!empty($_POST['name']) && !preg_match("/^[a-zA-ZäöüÄÖÜß ]*$/", stripslashes($_POST['name'])))
 		$error_msg[] = $emptyNameField;
 	if (!empty($_POST['email']) && !preg_match('/^([a-z0-9])(([-a-z0-9._])*([a-z0-9]))*\@([a-z0-9])(([a-z0-9-])*([a-z0-9]))+' . '(\.([a-z0-9])([-a-z0-9_-])?([a-z0-9])+)+$/i', strtolower($_POST['email'])))
 		$error_msg[] = $invalidEmail;
