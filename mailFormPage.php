@@ -36,7 +36,7 @@ $noAgeVerification = "Du musst bitte best&auml;tigen, dass du 18 Jahre alt bist.
 $genericProblem = 'Ups, ein Fehler ist aufgetreten...';
 
 // message to display if user is suspected to spam
-$suspectSpam = 'Deine Mail steht unter Spamverdacht und konnte diesmal nicht gesendet werden. ['.$points.']';
+$suspectSpam = 'Deine Mail steht unter Spamverdacht und konnte diesmal nicht gesendet werden.';
 
 // ### END OF OPTIONS ###
 
@@ -138,7 +138,7 @@ if (($_SERVER['REQUEST_METHOD'] == "POST") && (isset($_REQUEST['regFormSubmit'])
 		}
 	} else {
 		if (empty($error_msg))
-			$error_msg[] = $suspectSpam;
+			$error_msg[] = $suspectSpam . '[' . $points . ']';
 	}
 }
 function get_data($var) {
