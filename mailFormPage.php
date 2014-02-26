@@ -179,7 +179,7 @@ function get_data($var) {
     
     <form class="registerForm twelve columns offset-by-two" <?php if (isset($disable) && $disable === true) echo ' style="display: none;"'; ?> method="post" action="<?php echo $_SERVER['PHP_SELF'] ;?>">
         <div class="textBlock">
-		<p>Willst Du mehr &uuml;ber den Halbcode Nathan und die Welt der Hexen erfahren? Hier hast Du die Chance, eines von 20 Exemplaren von Sally Greens Roman &raquo;Half Bad &ndash; Das Dunkle in mir&laquo; zu gewinnen. Einsendeschluss ist der 1. Juni 2014.</p>
+		<p>Willst Du mehr &uuml;ber den Halbcode Nathan und die Welt der Hexen erfahren? Hier hast Du die Chance, eines von 20 Exemplaren von Sally Greens Roman &raquo;Half Bad &ndash; Das Dunkle in mir&laquo; zu gewinnen. Einsendeschluss ist der <strong>1. Juni 2014.</strong></p>
 	</div>
 
 
@@ -190,7 +190,7 @@ function get_data($var) {
                 <label for="name">Vor- und Nachname: *</label> 
                         <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" /><br />
 
-                <label for="address">Straße und Hausnummer: *</label> 
+                <label for="address">Stra&szlig;e und Hausnummer: *</label> 
                         <input type="text" name="address" id="address" value="<?php get_data("address"); ?>" /><br />
 
                 <label for="cityZip">PLZ und Ort: *</label> 
