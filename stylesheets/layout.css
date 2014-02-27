@@ -189,6 +189,10 @@ h2.header {
 	background: url(../images/button_leseprobe.png) 0px -110px no-repeat;
 }
 
+.page-book .leseproben.mobile {
+	display: none;
+}
+
 .page-book .kaufen {
 	width: 284px;
 	height: 30px;
@@ -502,25 +506,25 @@ margin-top: 60px;
 			display: none;
 		}
 
-	.button {
-		position: relative;
-		background: #ddd !important;
-		width: 100% !important;
-		padding: 0px;
-		height: auto !important;
-		text-align: center;		
-		top: 0;
-		left: 0;
-		font-family: "Georgia", "Times New Roman", serif;
-		border-radius: 0px;
-	}
-									
-	.button .btnLabel {
-		display: block !important;
-	}
-	
-	.page-win .profileDetails dt {width: 100%;}
-	.page-win .profileDetails dd {width: 90%; margin: 10px 0px 10px 10%;}
+		.button {
+			position: relative;
+			background: #ddd !important;
+			width: 100% !important;
+			padding: 0px;
+			height: auto !important;
+			text-align: center;		
+			top: 0;
+			left: 0;
+			font-family: "Georgia", "Times New Roman", serif;
+			border-radius: 0px;
+		}
+										
+		.button .btnLabel {
+			display: block !important;
+		}
+		
+		.page-win .profileDetails dt {width: 100%;}
+		.page-win .profileDetails dd {width: 90%; margin: 10px 0px 10px 10%;}
 
 	}
 
@@ -669,6 +673,14 @@ margin-top: 60px;
 
 		.page-book .button {
 			color: #fff;
+		}
+
+		.page-book .leseproben {
+			display: none;
+		}
+
+		.page-book .leseproben.mobile {
+			display: block;
 		}
 
 	}
@@ -840,6 +852,14 @@ margin-top: 60px;
 
 		.page-book .button {
 			color: #fff;
+		}
+
+		.page-book .leseproben {
+			display: none;
+		}
+
+		.page-book .leseproben.mobile {
+			display: block;
 		}
 	}
 
