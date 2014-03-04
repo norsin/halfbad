@@ -517,6 +517,7 @@ margin-top: 60px;
 			left: 0;
 			font-family: "Georgia", "Times New Roman", serif;
 			border-radius: 0px;
+			text-decoration: none !important;
 		}
 										
 		.button .btnLabel {
