@@ -17,7 +17,6 @@
 		    $backTo = "home";
 		}
 		?>
-		<a href="#" target="_blank" class="button zumTrailer"><span class="btnLabel">Zum Trailer</span></a>
 		<a href="http://www.randomhouse.de/Buch/HALF-BAD-Das-Dunkle-in-mir-Band-1/Sally-Green/e448547.rhd?mid=4&exc=419500&showpdf=true#tabbox" target="_blank" class="button leseproben"><span class="btnLabel">Leseprobe</span></a>
 		<a href="pdf/leseprobe.pdf" target="_blank" class="button leseproben mobile"><span class="btnLabel">Leseprobe</span></a>
 		<a href="http://www.randomhouse.de/Buch/HALF-BAD-Das-Dunkle-in-mir-Band-1/Sally-Green/e448547.rhd" target="_blank" class="button kaufen"><span class="btnLabel">Kaufen</span></a>
