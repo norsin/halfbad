@@ -742,6 +742,10 @@ margin-top: 60px;
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
+		
+		.page-home .container {
+			height: auto;
+		}
 
 		.greyGradientBg {
 			background: #9b9a98 !important;
