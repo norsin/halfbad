@@ -866,16 +866,14 @@ margin-top: 60px;
 			background: url(../images/button_mobile03_small.jpg) 0px -45px no-repeat;
 		}
 
-		.page-win .container {
-		}
-
 		.page-win .openMobileContact {
 			display: block;
 		}
 
 		.page-win .contentWrapper {
-				margin-top: 0px;
-			}
+			height: auto;
+			margin-top: 0px;
+		}
 
 		.page-win .resultProfile .header {
 			color: #B3060C;
