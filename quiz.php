@@ -1,4 +1,4 @@
-<div class="contentWrapper sixteen columns quiz">
+<div class="contentWrapper quiz">
 <form method="post" action="scorequiz.php" class="quizform">
       <div class="newboxes greyGradientBg" id="newboxes1" style="display: block;">
             <span class="frage">
