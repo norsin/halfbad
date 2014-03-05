@@ -83,7 +83,6 @@ if(!isset($_SESSION['currentPage'])) {
                 } else {
                     include "home.php";
                 }?>
-		<?php include "teilnahmebox.php" ?>
 	</div>
 	<?php include "impressum.php"; ?>
 
