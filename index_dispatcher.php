@@ -114,6 +114,7 @@ if(!isset($_SESSION['currentPage'])) {
 			})
 		</script>
 	</div>
+	<?php include "impressum.php"; ?>
 
 
 <!-- End Document

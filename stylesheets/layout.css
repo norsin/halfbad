@@ -64,7 +64,6 @@ body {
 }
 
 .container {
-	background: #fff;
 	font-family: "Georgia", "Times New Roman", serif;
 	color: #000;
 	padding-top: 60px;
@@ -99,6 +98,15 @@ h2.header {
 .content {
 	font-size: 1.4em;
 	line-height: 1.3em;
+}
+
+.container.impressum {
+	background: none !important;
+	height: auto !important;
+	color: #fff;
+	margin: 0 auto;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
 }
 
 /* #Page Styles
@@ -250,9 +258,20 @@ h2.header {
 /* quiz */
 /* ---- */
 
-.page-quiz .container {background: none;}
+.page-quiz .container {background: none; padding: 0;}
 
-.page-quiz .newboxes {width: 70%; height: 600px; padding: 100px 15%;position: absolute;top: 0;left: 0; color: #fff;font-size: 1.4em;line-height: 1.4em;font-weight: bolder;}
+.page-quiz .quizform {
+	margin: 0;
+}
+
+.page-quiz .newboxes {
+	height: 640px;
+	padding: 100px 15%;
+	color: #fff;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	font-weight: bolder;
+}
 
 .page-quiz #newboxes1 {background: url(../images/background_quiz01.jpg) 0px 0px no-repeat;}
 .page-quiz #newboxes2 {background: url(../images/background_quiz02.jpg) 0px 0px no-repeat;}
@@ -577,8 +596,7 @@ margin-top: 60px;
 	
 		.container,
 		.page-quiz .newboxes {
-			height: auto;
-			padding-top: 20px;
+			padding: 20px 0px 0px 0px;
 			font-weight: normal;
 		}
 
@@ -751,6 +769,7 @@ margin-top: 60px;
 
 		.page-quiz .newboxes {
 			height: auto !important;
+			float: left;
 			padding: 10px 5%;
 			margin: 0;
 			color: #000;

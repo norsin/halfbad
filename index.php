@@ -84,6 +84,7 @@ if(!isset($_SESSION['currentPage'])) {
                     include "home.php";
                 }?>
 	</div>
+	<?php include "impressum.php"; ?>
 
 
 <!-- End Document
