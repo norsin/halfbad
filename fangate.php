@@ -67,7 +67,7 @@
 	if ($like_status == "1") {
 	//If the page is liked then display full app.
 
-        header("location: index.php");
+        header("location: index_dispatcher.php");
 
 	} else { ?>
 

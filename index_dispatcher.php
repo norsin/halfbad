@@ -72,7 +72,7 @@ if(!isset($_SESSION['currentPage'])) {
             }
         </script>
 </head>
-<body class="<?php echo $bodyClass ?>">
+<body class="<?php echo $bodyClass ?> dispatcher">
 
         <div id="fb-root"></div>
         <script type="text/javascript">
@@ -109,9 +109,9 @@ if(!isset($_SESSION['currentPage'])) {
                     include "home.php";
                 }?>
 		<script type="text/javascript">
-			$(document).ready(function(){
+			window.onload = function() {
 				FB.Canvas.setAutoGrow();
-			})
+			}
 		</script>
 		<?php include "teilnahmebox.php" ?>
 	</div>
