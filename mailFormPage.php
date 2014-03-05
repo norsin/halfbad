@@ -202,7 +202,7 @@ function get_data($var) {
                 <label for="email">Mailadresse: *</label>
                         <input type="text" name="email" id="email" value="<?php get_data("email"); ?>" />
                
-                <span class="ageVerification" style="font-size:10px;">
+                <span class="ageVerification">
                     <input type="checkbox" name="age_verification" value="verified" style="margin-top:8px; width: 15px;" <?php if(!empty($_POST['age_verification'])) { echo 'checked' ;} ?>/>
                     <span style="text-decoration: underline">Ich bin unter 18 Jahre alt.</span> Das Einverst&auml;ndnis meiner Eltern zur Teilnahme an dieser Gewinnspielaktion habe ich eingeholt.
                 </span>
