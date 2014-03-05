@@ -113,6 +113,7 @@ if(!isset($_SESSION['currentPage'])) {
 				FB.Canvas.setAutoGrow();
 			})
 		</script>
+		<?php include "teilnahmebox.php" ?>
 	</div>
 	<?php include "impressum.php"; ?>
 

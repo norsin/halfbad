@@ -104,9 +104,45 @@ h2.header {
 	background: none !important;
 	height: auto !important;
 	color: #fff;
-	margin: 0 auto;
+	margin: 10px auto 0px auto;
 	padding: 10px 0px 0px 0px;
 	text-align: center;
+}
+.container.impressum a:link,
+.container.impressum a:visited {
+	color: #fff;
+}
+
+#teilnahmebox {
+	position: absolute;
+	width: 94%;
+	left: 3%;
+	top: 10px;
+	border-radius: 10px;
+	opacity: 0.9;
+	color: white;
+	display: none;
+	background: black;
+	height: auto;
+	text-align: left;
+	font-size: 0.9em;
+	z-index: 300;
+}
+
+#teilnahmebox > * {
+	width: 94%;
+	margin: 10px 3%;
+}
+
+#teilnahmebox .close {
+	background: #fff;
+	color: #000;
+	width: auto;
+	float: right;
+	padding: 5px 10px;
+	border-radius: 3px;
+	font-weight: bolder;
+	cursor: pointer;
 }
 
 /* #Page Styles
