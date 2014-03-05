@@ -187,7 +187,7 @@ function get_data($var) {
         </noscript>
         <p>
 
-		<label for="auswertung">Bist Du laut der Auswertung eher ein Schwarzer oder Wei&szlig;er Hexer oder ein Halbcode? *</label> 
+		<label for="auswertung">Bist Du laut der Auswertung eher ein Schwarzer oder Wei&szlig;er Hexer oder ein Halbcode?</label> 
 			<input type="text" name="gewinnspielfrage" id="auswertung" value="<?php get_data("gewinnspielfrage"); ?>" />
 
                 <label for="name">Vor- und Nachname: *</label> 
