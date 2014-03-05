@@ -223,7 +223,7 @@ function get_data($var) {
     <?php if (isset($disable) && $disable === true) { ?>
         
         <form class="appNavigator" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                <button class="button backward eight columns" name="currentPage" value="home"><span class="btnLabel">homepage</span></span>
+                <button class="button backward" name="currentPage" value="home"><span class="btnLabel">homepage</span></span>
         </form>
     
     <?php }?>

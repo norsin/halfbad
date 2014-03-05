@@ -532,6 +532,31 @@ margin-top: 60px;
 	padding: 0;
 }
 
+.page-mailFormPage .success {
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 250px;
+	text-align: center;
+	font-size: 1.45em;
+}
+
+.page-mailFormPage .backward {
+	width: 30%;
+	margin-left: 35%;
+	font-size: 1.4em;
+	background: #B3060C !important;
+	color: #fff;
+	text-shadow: none;
+	padding: 10px 0px !important;
+	border-radius: 5px;
+	border: none;
+}
+
+.page-mailFormPage .backward .btnLabel {
+	display: block;
+}
+
+
 /* #Media Queries
 ================================================== */
 	/* Smaller than standard 960 (devices and browsers) */
