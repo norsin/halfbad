@@ -541,6 +541,11 @@ margin-top: 60px;
 		.mehrZumBuch {
 			top: 170px;	
 		}
+
+		.page-win .appNavigator {
+			margin-left: 20px;
+			margin-top: 65px;
+		}
 	}
 
 	/* #Facebook tab optimization */
@@ -549,6 +554,11 @@ margin-top: 60px;
 			.container { 
 			    background-position: 0px 0px !important;
 			}
+
+		.page-win .appNavigator {
+			margin-left:60px;
+			margin-top: 85px;
+		}
 	    }
 
 	/* All Mobile Sizes (devices and browser) */
