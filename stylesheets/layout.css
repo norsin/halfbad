@@ -63,6 +63,10 @@ body {
 	background: #000;
 }
 
+body.dispatcher {
+	background: #fff;
+}
+
 .container {
 	font-family: "Georgia", "Times New Roman", serif;
 	color: #000;
@@ -108,6 +112,16 @@ h2.header {
 	padding: 10px 0px 0px 0px;
 	text-align: center;
 }
+
+body.dispatcher .container.impressum {
+	color: #444;
+}
+
+body.dispatcher .container.impressum a:link,
+body.dispatcher .container.impressum a:visited {
+	color: #444;
+}
+
 .container.impressum a:link,
 .container.impressum a:visited {
 	color: #fff;
