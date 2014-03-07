@@ -476,6 +476,11 @@ margin-top: 60px;
 	height: 740px;
 }
 
+.page-mailFormPage .registerFormContainer {
+	width: 100%;
+	float: left;
+} 
+
 .page-mailFormPage .registerForm {
 	font-size: 1.4em;
 	margin-top: 100px;
@@ -532,31 +537,30 @@ margin-top: 60px;
 	padding: 0;
 }
 
-.page-mailFormPage .success {
+.page-mailFormPage .success.appNavigator {
 	width: 60%;
 	margin-left: 20%;
 	margin-top: 250px;
 	text-align: center;
 	font-size: 1.45em;
+	float: left;
 }
 
-.page-mailFormPage .backward {
-	width: 30%;
-	margin-left: 35%;
-	font-size: 1.4em;
-	background: #B3060C !important;
-	color: #fff;
+
+.page-mailFormPage .success.appNavigator button {
+	display: inline;
+	background: none;
+	border: 0;
 	text-shadow: none;
-	padding: 10px 0px !important;
-	border-radius: 5px;
-	border: none;
+	font-family: "Georgia", "Times New Roman", serif;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	color: #000;
+	line-height: 2em;
+	text-decoration: underline;
 }
-
-.page-mailFormPage .backward .btnLabel {
-	display: block;
-}
-
-
 /* #Media Queries
 ================================================== */
 	/* Smaller than standard 960 (devices and browsers) */

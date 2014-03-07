@@ -24,7 +24,7 @@ $pleaseFill = "Bitte f&uuml;lle alle Felder aus und sende das Formular erneut ab
 $emptyNameField = "Das Namensfeld darf keine Sonderzeichen enthalten.\r\n"; 
 
 // message to display after successful email sending
-$thankyouMessage = 'Danke f&uuml;r deine Teilnahme an unserem Gewinnspiel!';
+$thankyouMessage = '<form class="success appNavigator" method="post" action="' . $_SERVER['PHP_SELF'] . '"> Danke f&uuml;r deine Teilnahme an unserem Gewinnspiel! Weitere Informationen zum Buch findest Du <button class="button bookPage" name="currentPage" value="book">hier</button></form>';
 
 // message to display if user inputs invalid email
 $invalidEmail = "Die E-Mail-Adresse ist ung&uuml;ltig.\r\n";
@@ -48,102 +48,102 @@ $requiredFields = explode(",", $requiredFields);
 $excludeFromMessage = explode(",", $excludeFromMessage);
 
 function clean($data) {
-	$data = trim(stripslashes(strip_tags($data)));
-	return $data;
+$data = trim(stripslashes(strip_tags($data)));
+return $data;
 }
 function isBot() {
-	$bots = array("Indy", "Blaiz", "Java", "libwww-perl", "Python", "OutfoxBot", "User-Agent", "PycURL", "AlphaServer", "T8Abot", "Syntryx", "WinHttp", "WebBandit", "nicebot", "Teoma", "alexa", "froogle", "inktomi", "looksmart", "URL_Spider_SQL", "Firefly", "NationalDirectory", "Ask Jeeves", "TECNOSEEK", "InfoSeek", "WebFindBot", "girafabot", "crawler", "www.galaxy.com", "Googlebot", "Scooter", "Slurp", "appie", "FAST", "WebBug", "Spade", "ZyBorg", "rabaz");
+$bots = array("Indy", "Blaiz", "Java", "libwww-perl", "Python", "OutfoxBot", "User-Agent", "PycURL", "AlphaServer", "T8Abot", "Syntryx", "WinHttp", "WebBandit", "nicebot", "Teoma", "alexa", "froogle", "inktomi", "looksmart", "URL_Spider_SQL", "Firefly", "NationalDirectory", "Ask Jeeves", "TECNOSEEK", "InfoSeek", "WebFindBot", "girafabot", "crawler", "www.galaxy.com", "Googlebot", "Scooter", "Slurp", "appie", "FAST", "WebBug", "Spade", "ZyBorg", "rabaz");
 
-	foreach ($bots as $bot)
-		if (stripos($_SERVER['HTTP_USER_AGENT'], $bot) !== false)
-			return true;
-
-	if (empty($_SERVER['HTTP_USER_AGENT']) || $_SERVER['HTTP_USER_AGENT'] == " ")
+foreach ($bots as $bot)
+	if (stripos($_SERVER['HTTP_USER_AGENT'], $bot) !== false)
 		return true;
-	
-	return false;
+
+if (empty($_SERVER['HTTP_USER_AGENT']) || $_SERVER['HTTP_USER_AGENT'] == " ")
+	return true;
+
+return false;
 }
 
 if (($_SERVER['REQUEST_METHOD'] == "POST") && (isset($_REQUEST['regFormSubmit']))) {
-	if (isBot() !== false)
-		$error_msg[] = "No bots please! UA reported as: ".$_SERVER['HTTP_USER_AGENT'];
-		
-	// lets check a few things - not enough to trigger an error on their own, but worth assigning a spam score.. 
-	// score quickly adds up therefore allowing genuine users with 'accidental' score through but cutting out real spam :)
-	$points = (int)0;
+if (isBot() !== false)
+	$error_msg[] = "No bots please! UA reported as: ".$_SERVER['HTTP_USER_AGENT'];
 	
-	$badwords = array("adult", "beastial", "bestial", "blowjob", "clit", "cum", "cunilingus", "cunillingus", "cunnilingus", "cunt", "ejaculate", "fag", "felatio", "fellatio", "fuck", "fuk", "fuks", "gangbang", "gangbanged", "gangbangs", "hotsex", "hardcode", "jism", "jiz", "orgasim", "orgasims", "orgasm", "orgasms", "phonesex", "phuk", "phuq", "pussies", "pussy", "spunk", "xxx", "viagra", "phentermine", "tramadol", "adipex", "advai", "alprazolam", "ambien", "ambian", "amoxicillin", "antivert", "blackjack", "backgammon", "texas", "holdem", "poker", "carisoprodol", "ciara", "ciprofloxacin", "debt", "dating", "porn", "link=", "voyeur", "content-type", "bcc:", "cc:", "document.cookie", "onclick", "onload", "javascript");
+// lets check a few things - not enough to trigger an error on their own, but worth assigning a spam score.. 
+// score quickly adds up therefore allowing genuine users with 'accidental' score through but cutting out real spam :)
+$points = (int)0;
 
-	foreach ($badwords as $word)
-		if (
-			strpos(strtolower($_POST['name']), $word) !== false
-		)
-			$points += 2;
+$badwords = array("adult", "beastial", "bestial", "blowjob", "clit", "cum", "cunilingus", "cunillingus", "cunnilingus", "cunt", "ejaculate", "fag", "felatio", "fellatio", "fuck", "fuk", "fuks", "gangbang", "gangbanged", "gangbangs", "hotsex", "hardcode", "jism", "jiz", "orgasim", "orgasims", "orgasm", "orgasms", "phonesex", "phuk", "phuq", "pussies", "pussy", "spunk", "xxx", "viagra", "phentermine", "tramadol", "adipex", "advai", "alprazolam", "ambien", "ambian", "amoxicillin", "antivert", "blackjack", "backgammon", "texas", "holdem", "poker", "carisoprodol", "ciara", "ciprofloxacin", "debt", "dating", "porn", "link=", "voyeur", "content-type", "bcc:", "cc:", "document.cookie", "onclick", "onload", "javascript");
+
+foreach ($badwords as $word)
+	if (
+		strpos(strtolower($_POST['name']), $word) !== false
+	)
+		$points += 2;
+
+if (isset($_POST['nojs']))
+	$points += 1;
+if (strlen($_POST['name']) < 3)
+	$points += 1;
+// end score assignments
+
+foreach($requiredFields as $field) {
+	trim($_POST[$field]);
 	
-	if (isset($_POST['nojs']))
-		$points += 1;
-	if (strlen($_POST['name']) < 3)
-		$points += 1;
-	// end score assignments
+	if (!isset($_POST[$field]) || empty($_POST[$field]) && array_pop($error_msg) != $pleaseFill . "\r\n")
+		$error_msg[] = $pleaseFill;
+}
 
-	foreach($requiredFields as $field) {
-		trim($_POST[$field]);
-		
-		if (!isset($_POST[$field]) || empty($_POST[$field]) && array_pop($error_msg) != $pleaseFill . "\r\n")
-			$error_msg[] = $pleaseFill;
+if (!empty($_POST['name']) && !preg_match("/^[a-zA-ZäöüÄÖÜß ]*$/", stripslashes($_POST['name'])))
+	$error_msg[] = $emptyNameField;
+if (!empty($_POST['email']) && !preg_match('/^([a-z0-9])(([-a-z0-9._])*([a-z0-9]))*\@([a-z0-9])(([a-z0-9-])*([a-z0-9]))+' . '(\.([a-z0-9])([-a-z0-9_-])?([a-z0-9])+)+$/i', strtolower($_POST['email'])))
+	$error_msg[] = $invalidEmail;
+
+if ($error_msg == NULL && $points <= $maxPoints) {
+	
+	$message = $emailIntro;
+	foreach ($_POST as $key => $val) {
+	    foreach ($excludeFromMessage as $keyExc => $valExc) {
+		if ($key != $valExc) {
+		    if (is_array($val)) {
+
+			    foreach ($val as $subval) {
+				    $message .= ucwords($key) . ": " . clean($subval) . "\r\n";
+			    }
+		    } else {
+			    $message .= ucwords($key) . ": " . clean($val) . "\r\n";
+		    }
+		}
+	    }
 	}
 
-	if (!empty($_POST['name']) && !preg_match("/^[a-zA-ZäöüÄÖÜß ]*$/", stripslashes($_POST['name'])))
-		$error_msg[] = $emptyNameField;
-	if (!empty($_POST['email']) && !preg_match('/^([a-z0-9])(([-a-z0-9._])*([a-z0-9]))*\@([a-z0-9])(([a-z0-9-])*([a-z0-9]))+' . '(\.([a-z0-9])([-a-z0-9_-])?([a-z0-9])+)+$/i', strtolower($_POST['email'])))
-		$error_msg[] = $invalidEmail;
-	
-	if ($error_msg == NULL && $points <= $maxPoints) {
-		
-		$message = $emailIntro;
-		foreach ($_POST as $key => $val) {
-                    foreach ($excludeFromMessage as $keyExc => $valExc) {
-                        if ($key != $valExc) {
-                            if (is_array($val)) {
+	if (strstr($_SERVER['SERVER_SOFTWARE'], "Win")) {
+		$headers   = "From: $yourEmail\n";
+		$headers  .= "Reply-To: {$_POST['email']}";
+	} else {
+		$headers   = "From: $yourWebsite <$yourEmail>\n";
+		$headers  .= "Reply-To: {$_POST['email']}";
+	}
 
-                                    foreach ($val as $subval) {
-                                            $message .= ucwords($key) . ": " . clean($subval) . "\r\n";
-                                    }
-                            } else {
-                                    $message .= ucwords($key) . ": " . clean($val) . "\r\n";
-                            }
-                        }
-                    }
-		}
-
-		if (strstr($_SERVER['SERVER_SOFTWARE'], "Win")) {
-			$headers   = "From: $yourEmail\n";
-			$headers  .= "Reply-To: {$_POST['email']}";
+	if (mail($yourEmail,$emailSubject,$message,$headers)) {
+		if (!empty($thanksPage)) {
+			header("Location: $thanksPage");
+			exit;
 		} else {
-			$headers   = "From: $yourWebsite <$yourEmail>\n";
-			$headers  .= "Reply-To: {$_POST['email']}";
-		}
-
-		if (mail($yourEmail,$emailSubject,$message,$headers)) {
-			if (!empty($thanksPage)) {
-				header("Location: $thanksPage");
-				exit;
-			} else {
-				$result = $thankyouMessage;
-				$disable = true;
-                                session_destroy();
-			}
-		} else {
-			$error_msg[] = $genericProblem;
+			$result = $thankyouMessage;
+			$disable = true;
+			session_destroy();
 		}
 	} else {
-		if (empty($error_msg))
-			$error_msg[] = $suspectSpam . '[' . $points . ']';
+		$error_msg[] = $genericProblem;
 	}
+} else {
+	if (empty($error_msg))
+		$error_msg[] = $suspectSpam . '[' . $points . ']';
+}
 }
 function get_data($var) {
-	if (isset($_POST[$var]))
-		echo htmlspecialchars($_POST[$var]);
+if (isset($_POST[$var]))
+	echo htmlspecialchars($_POST[$var]);
 }
 ?>
 
@@ -164,8 +164,7 @@ function get_data($var) {
 
 	To read the GNU General Public License, see http://www.gnu.org/licenses/.
 -->
-<link rel="stylesheet" href="css/answer.css" />
-<div class="gameResult win">
+<div class="registerFormContainer">
 
     <?php
     if (!empty($error_msg)) {
@@ -219,13 +218,5 @@ function get_data($var) {
         </p>
 
     </form>
-    
-    <?php if (isset($disable) && $disable === true) { ?>
-        
-        <form class="appNavigator" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                <button class="button backward" name="currentPage" value="home"><span class="btnLabel">homepage</span></span>
-        </form>
-    
-    <?php }?>
     
 </div>
