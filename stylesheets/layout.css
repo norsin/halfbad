@@ -637,6 +637,7 @@ margin-top: 60px;
 										
 		.button .btnLabel {
 			display: block !important;
+			text-transform: uppercase;
 		}
 		
 		.page-win .profileDetails dt {width: 100%;}
