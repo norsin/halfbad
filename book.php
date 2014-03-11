@@ -10,7 +10,7 @@
 		<p>Seit seiner Kindheit wird Nathan von der Regierung beobachtet, verfolgt, eingesperrt. Seine Welt wird von Wei&szlig;en Hexen regiert, w&auml;hrend die Schwarzen Hexen im Untergrund leben. Nathan ist beides &ndash; denn seine Mutter war wei&szlig; und sein Vater Marcus ist der gef&uuml;rchtetste Schwarze Hexer aller Zeiten.</p>
 		<p>Um an Marcus heranzukommen, stellt der Rat der Wei&szlig;en Hexen eine t&ouml;dliche Falle &ndash; mit Nathan als K&ouml;der. Nathan bricht aus, doch schon bald wird er von beiden Seiten gejagt. Er muss sich entscheiden, wof&uuml;r es sich zu k&auml;mpfen lohnt.</p>	
 	</div>
-	<form class="appNavigator" method="post" action="index.php">
+	<form class="appNavigator" method="post" action="<?php echo $_SERVER['PHP_SELF'] ;?>">
 		<?php if(isset($_POST['backTo'])) {
 		    $backTo = $_POST['backTo'];
 		} else {
