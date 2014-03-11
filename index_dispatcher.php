@@ -69,7 +69,7 @@ if(!isset($_SESSION['currentPage'])) {
         <script type="text/javascript">
             if (top == self) 
             { 
-                top.location = "https://www.facebook.com/pages/bilandia-Test/318672431558398?id=318672431558398&sk=app_533863763394990";
+                top.location = "https://www.facebook.com/FanforumFantasy/app_533863763394990";
             }
         </script>
 </head>
