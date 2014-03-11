@@ -35,6 +35,12 @@ if (count($maxRes) > 1) {
 
 $_SESSION['gameResult'] = $maxRes;
 $_SESSION['currentPage'] = 'win';
-header('location: index.php');
+
+if(isset($_SESSION['fbEnv'])) {
+	header('location: index_dispatcher.php');
+} else {
+	header('location: index.php');
+}
+
 
 ?>

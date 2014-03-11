@@ -1,4 +1,5 @@
 <?php session_start(); 
+$_SESSION['fbEnv'] = "true";
 header('P3P: CP="NOI ADM DEV COM NAV OUR STP"');
 //Get PHP SDK
 require_once 'facebook.php';
