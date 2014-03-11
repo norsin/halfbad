@@ -24,7 +24,7 @@ $pleaseFill = "Bitte f&uuml;lle alle Felder aus und sende das Formular erneut ab
 $emptyNameField = "Das Namensfeld darf keine Sonderzeichen enthalten.\r\n"; 
 
 // message to display after successful email sending
-$thankyouMessage = '<form class="success appNavigator" method="post" action="' . $_SERVER['PHP_SELF'] . '"> Danke f&uuml;r deine Teilnahme an unserem Gewinnspiel! Weitere Informationen zum Buch findest Du <button class="button bookPage" name="currentPage" value="book">hier</button></form>';
+$thankyouMessage = '<form class="success appNavigator" method="post" action="' . $_SERVER['PHP_SELF'] . '"> Danke f&uuml;r Deine Teilnahme an unserem Gewinnspiel! Weitere Informationen zum Buch findest Du <button class="button bookPage" name="currentPage" value="book">hier</button></form>';
 
 // message to display if user inputs invalid email
 $invalidEmail = "Die E-Mail-Adresse ist ung&uuml;ltig.\r\n";
