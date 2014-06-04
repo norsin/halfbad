@@ -42,7 +42,5 @@
 	<form class="appNavigator" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <input type="hidden" name="backTo" value="win" />
 	    <button name="currentPage" value="book" class="button bookBtn forward zumBuch"><span class="btnLabel">Zum Buch</span></button>
-	    <button name="currentPage" value="mailFormPage" class="button forward openContactForm gewinnSpiel"><span class="btnLabel">Gewinnspiel</span></button>
-	    <button name="currentPage" value="contactPage" class="button forward openMobileContact"><span class="btnLabel">Gewinnspiel</span></button>
 	</form>
 </div>
