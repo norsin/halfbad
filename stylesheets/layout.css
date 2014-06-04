@@ -196,7 +196,7 @@ body.dispatcher .container.impressum a:visited {
 	margin: 0;
 	background: url(../images/button_hierentlang.png) 0px -40px no-repeat;
 	margin-left: -60px;
-	margin-top: 20px;
+	margin-top: 140px;
 }
 
 .startGame:hover {
@@ -690,7 +690,11 @@ margin-top: 60px;
 		}
 		.heading .oder {color: #B3060C;}
 		.heading .weiss {text-transform: uppercase; color: #fff}
-	
+
+		.page-home .container {
+			height: 570px;		
+		}
+
 		.container,
 		.page-quiz .newboxes {
 			padding: 20px 0px 0px 0px;
